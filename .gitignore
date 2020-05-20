@@ -6,7 +6,6 @@
 /components
 
 # pack
-*.tgz
 
 # dependencies
 /node_modules
