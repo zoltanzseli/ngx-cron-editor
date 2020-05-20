@@ -1,0 +1,56 @@
+{
+  "$schema": "./node_modules/ng-packagr/package.schema.json",
+  "description": "A cron expression generator for Angular 8+",
+  "name": "ngx-cron-editor",
+  "version": "0.6.4",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/haavardj/ngx-cron-editor"
+  },
+  "author": {
+    "name": "Håvard Dagenborg Johansen",
+    "email": "haavardj@dagenborg.net"
+  },
+  "contributors": [
+    "Claudiu Constantin",
+    "Eduardo Sarmiento"
+  ],
+  "keywords": [
+    "angular",
+    "cron",
+    "cron-expression",
+    "angular-cli",
+    "quartz"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/haavardj/ngx-cron-editor/issues"
+  },
+  "homepage": "https://github.com/haavardj/ngx-cron-editor",
+  "peerDependencies": {
+    "@angular/core": "~8.2.14",
+    "@angular/animations": "~8.2.14",
+    "@angular/common": "~8.2.14",
+    "@angular/compiler": "~8.2.14",
+    "@angular/forms": "~8.2.14",
+    "@angular/platform-browser": "~8.2.14",
+    "@angular/platform-browser-dynamic": "~8.2.14",
+    "@angular/router": "~8.2.14",
+    "@angular/material": "^8.2.3",
+    "rxjs": "~6.5.3",
+    "tslib": "^1.10.0",
+    "zone.js": "~0.9.1"
+  },
+  "main": "bundles/ngx-cron-editor.umd.js",
+  "module": "fesm5/ngx-cron-editor.js",
+  "es2015": "fesm2015/ngx-cron-editor.js",
+  "esm5": "esm5/ngx-cron-editor.js",
+  "esm2015": "esm2015/ngx-cron-editor.js",
+  "fesm5": "fesm5/ngx-cron-editor.js",
+  "fesm2015": "fesm2015/ngx-cron-editor.js",
+  "typings": "ngx-cron-editor.d.ts",
+  "sideEffects": false,
+  "scripts": {
+    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by Ivy. This is not allowed.\\nPlease delete and rebuild the package, without compiling with Ivy, before attempting to publish.\\n')\" && exit 1"
+  }
+}

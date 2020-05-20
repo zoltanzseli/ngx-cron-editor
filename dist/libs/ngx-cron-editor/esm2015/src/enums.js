@@ -1,0 +1,34 @@
+export const Days = {
+    'SUN': "Sunday",
+    'MON': "Monday",
+    'TUE': "Tuesday",
+    'WED': "Wednesday",
+    'THU': "Thursday",
+    'FRI': "Friday",
+    'SAT': "Saturday"
+};
+export const MonthWeeks = {
+    '#1': "First",
+    '#2': "Second",
+    '#3': "Third",
+    '#4': "Fourth",
+    '#5': "Fifth",
+    'L': "Last"
+};
+export var Months;
+(function (Months) {
+    Months[Months["January"] = 1] = "January";
+    Months[Months["February"] = 2] = "February";
+    Months[Months["March"] = 3] = "March";
+    Months[Months["April"] = 4] = "April";
+    Months[Months["May"] = 5] = "May";
+    Months[Months["June"] = 6] = "June";
+    Months[Months["July"] = 7] = "July";
+    Months[Months["August"] = 8] = "August";
+    Months[Months["September"] = 9] = "September";
+    Months[Months["October"] = 10] = "October";
+    Months[Months["November"] = 11] = "November";
+    Months[Months["December"] = 12] = "December";
+})(Months || (Months = {}));
+;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZW51bXMuanMiLCJzb3VyY2VSb290Ijoibmc6Ly9uZ3gtY3Jvbi1lZGl0b3IvIiwic291cmNlcyI6WyJzcmMvZW51bXMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsTUFBTSxDQUFDLE1BQU0sSUFBSSxHQUFHO0lBQ2hCLEtBQUssRUFBRSxRQUFRO0lBQ2YsS0FBSyxFQUFFLFFBQVE7SUFDZixLQUFLLEVBQUUsU0FBUztJQUNoQixLQUFLLEVBQUUsV0FBVztJQUNsQixLQUFLLEVBQUUsVUFBVTtJQUNqQixLQUFLLEVBQUUsUUFBUTtJQUNmLEtBQUssRUFBRSxVQUFVO0NBQ3BCLENBQUM7QUFFRixNQUFNLENBQUMsTUFBTSxVQUFVLEdBQUc7SUFDdEIsSUFBSSxFQUFFLE9BQU87SUFDYixJQUFJLEVBQUUsUUFBUTtJQUNkLElBQUksRUFBRSxPQUFPO0lBQ2IsSUFBSSxFQUFFLFFBQVE7SUFDZCxJQUFJLEVBQUUsT0FBTztJQUNiLEdBQUcsRUFBRSxNQUFNO0NBQ2QsQ0FBQztBQUVGLE1BQU0sQ0FBTixJQUFZLE1BYVg7QUFiRCxXQUFZLE1BQU07SUFDZCx5Q0FBVyxDQUFBO0lBQ1gsMkNBQVEsQ0FBQTtJQUNSLHFDQUFLLENBQUE7SUFDTCxxQ0FBSyxDQUFBO0lBQ0wsaUNBQUcsQ0FBQTtJQUNILG1DQUFJLENBQUE7SUFDSixtQ0FBSSxDQUFBO0lBQ0osdUNBQU0sQ0FBQTtJQUNOLDZDQUFTLENBQUE7SUFDVCwwQ0FBTyxDQUFBO0lBQ1AsNENBQVEsQ0FBQTtJQUNSLDRDQUFRLENBQUE7QUFDWixDQUFDLEVBYlcsTUFBTSxLQUFOLE1BQU0sUUFhakI7QUFBQSxDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGNvbnN0IERheXMgPSB7XG4gICAgJ1NVTic6IFwiU3VuZGF5XCIsXG4gICAgJ01PTic6IFwiTW9uZGF5XCIsXG4gICAgJ1RVRSc6IFwiVHVlc2RheVwiLFxuICAgICdXRUQnOiBcIldlZG5lc2RheVwiLFxuICAgICdUSFUnOiBcIlRodXJzZGF5XCIsXG4gICAgJ0ZSSSc6IFwiRnJpZGF5XCIsXG4gICAgJ1NBVCc6IFwiU2F0dXJkYXlcIlxufTtcblxuZXhwb3J0IGNvbnN0IE1vbnRoV2Vla3MgPSB7XG4gICAgJyMxJzogXCJGaXJzdFwiLFxuICAgICcjMic6IFwiU2Vjb25kXCIsXG4gICAgJyMzJzogXCJUaGlyZFwiLFxuICAgICcjNCc6IFwiRm91cnRoXCIsXG4gICAgJyM1JzogXCJGaWZ0aFwiLFxuICAgICdMJzogXCJMYXN0XCJcbn07XG5cbmV4cG9ydCBlbnVtIE1vbnRocyB7XG4gICAgSmFudWFyeSA9IDEsXG4gICAgRmVicnVhcnksXG4gICAgTWFyY2gsXG4gICAgQXByaWwsXG4gICAgTWF5LFxuICAgIEp1bmUsXG4gICAgSnVseSxcbiAgICBBdWd1c3QsXG4gICAgU2VwdGVtYmVyLFxuICAgIE9jdG9iZXIsXG4gICAgTm92ZW1iZXIsXG4gICAgRGVjZW1iZXJcbn07XG4iXX0=
