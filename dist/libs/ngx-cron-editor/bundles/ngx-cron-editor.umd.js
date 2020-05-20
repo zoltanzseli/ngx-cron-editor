@@ -1,8 +1,8 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('@angular/forms'), require('@angular/common'), require('@angular/material/form-field'), require('@angular/material/select'), require('@angular/material/core'), require('@angular/material/tabs'), require('@angular/material/radio'), require('@angular/material/checkbox'), require('@angular/material/input'), require('@angular/material/list')) :
-    typeof define === 'function' && define.amd ? define('ngx-cron-editor', ['exports', '@angular/core', '@angular/forms', '@angular/common', '@angular/material/form-field', '@angular/material/select', '@angular/material/core', '@angular/material/tabs', '@angular/material/radio', '@angular/material/checkbox', '@angular/material/input', '@angular/material/list'], factory) :
-    (global = global || self, factory(global['ngx-cron-editor'] = {}, global.ng.core, global.ng.forms, global.ng.common, global.ng.material['form-field'], global.ng.material.select, global.ng.material.core, global.ng.material.tabs, global.ng.material.radio, global.ng.material.checkbox, global.ng.material.input, global.ng.material.list));
-}(this, (function (exports, core, forms, common, formField, select, core$1, tabs, radio, checkbox, input, list) { 'use strict';
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('@angular/forms'), require('@angular/material/tabs'), require('@angular/material/list'), require('@angular/material/select'), require('@angular/material/input'), require('@angular/material/radio'), require('@angular/common'), require('@angular/material/checkbox'), require('@angular/material/core'), require('@angular/material/form-field')) :
+    typeof define === 'function' && define.amd ? define('ngx-cron-editor', ['exports', '@angular/core', '@angular/forms', '@angular/material/tabs', '@angular/material/list', '@angular/material/select', '@angular/material/input', '@angular/material/radio', '@angular/common', '@angular/material/checkbox', '@angular/material/core', '@angular/material/form-field'], factory) :
+    (global = global || self, factory(global['ngx-cron-editor'] = {}, global.ng.core, global.ng.forms, global.ng.material.tabs, global.ng.material.list, global.ng.material.select, global.ng.material.input, global.ng.material.radio, global.ng.common, global.ng.material.checkbox, global.ng.material.core, global.ng.material['form-field']));
+}(this, (function (exports, core, forms, tabs, list, select, input, radio, common, checkbox, core$1, formField) { 'use strict';
 
     /*! *****************************************************************************
     Copyright (c) Microsoft Corporation. All rights reserved.
@@ -201,125 +201,30 @@
         return (mod && mod.__esModule) ? mod : { default: mod };
     }
 
-    function TimePickerComponent_ng_container_1_mat_option_5_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "mat-option", 4);
-        core.ɵɵtext(1);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var hour_r5 = ctx.$implicit;
-        core.ɵɵproperty("value", hour_r5);
-        core.ɵɵadvance(1);
-        core.ɵɵtextInterpolate(hour_r5);
-    } }
-    function TimePickerComponent_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵelementStart(1, "mat-form-field");
-        core.ɵɵelementStart(2, "mat-label");
-        core.ɵɵtext(3, "Hour(s)");
-        core.ɵɵelementEnd();
-        core.ɵɵelementStart(4, "mat-select", 2);
-        core.ɵɵtemplate(5, TimePickerComponent_ng_container_1_mat_option_5_Template, 2, 2, "mat-option", 3);
-        core.ɵɵelementEnd();
-        core.ɵɵelementEnd();
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var ctx_r0 = core.ɵɵnextContext();
-        core.ɵɵadvance(5);
-        core.ɵɵproperty("ngForOf", ctx_r0.hours);
-    } }
-    function TimePickerComponent_ng_container_2_span_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "span");
-        core.ɵɵtext(1, ":");
-        core.ɵɵelementEnd();
-    } }
-    function TimePickerComponent_ng_container_2_mat_option_6_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "mat-option", 4);
-        core.ɵɵtext(1);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var minute_r8 = ctx.$implicit;
-        core.ɵɵproperty("value", minute_r8);
-        core.ɵɵadvance(1);
-        core.ɵɵtextInterpolate(minute_r8);
-    } }
-    function TimePickerComponent_ng_container_2_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵtemplate(1, TimePickerComponent_ng_container_2_span_1_Template, 2, 0, "span", 1);
-        core.ɵɵelementStart(2, "mat-form-field");
-        core.ɵɵelementStart(3, "mat-label");
-        core.ɵɵtext(4, "Minute(s)");
-        core.ɵɵelementEnd();
-        core.ɵɵelementStart(5, "mat-select", 5);
-        core.ɵɵtemplate(6, TimePickerComponent_ng_container_2_mat_option_6_Template, 2, 2, "mat-option", 3);
-        core.ɵɵelementEnd();
-        core.ɵɵelementEnd();
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var ctx_r1 = core.ɵɵnextContext();
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngIf", !ctx_r1.hideHours);
-        core.ɵɵadvance(5);
-        core.ɵɵproperty("ngForOf", ctx_r1.minutes);
-    } }
-    function TimePickerComponent_ng_container_3_span_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "span");
-        core.ɵɵtext(1, ":");
-        core.ɵɵelementEnd();
-    } }
-    function TimePickerComponent_ng_container_3_mat_option_6_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "mat-option", 4);
-        core.ɵɵtext(1);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var second_r11 = ctx.$implicit;
-        core.ɵɵproperty("value", second_r11);
-        core.ɵɵadvance(1);
-        core.ɵɵtextInterpolate(second_r11);
-    } }
-    function TimePickerComponent_ng_container_3_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵtemplate(1, TimePickerComponent_ng_container_3_span_1_Template, 2, 0, "span", 1);
-        core.ɵɵelementStart(2, "mat-form-field");
-        core.ɵɵelementStart(3, "mat-label");
-        core.ɵɵtext(4, "Second(s)");
-        core.ɵɵelementEnd();
-        core.ɵɵelementStart(5, "mat-select", 6);
-        core.ɵɵtemplate(6, TimePickerComponent_ng_container_3_mat_option_6_Template, 2, 2, "mat-option", 3);
-        core.ɵɵelementEnd();
-        core.ɵɵelementEnd();
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var ctx_r2 = core.ɵɵnextContext();
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngIf", !ctx_r2.hideMinutes);
-        core.ɵɵadvance(5);
-        core.ɵɵproperty("ngForOf", ctx_r2.seconds);
-    } }
-    function TimePickerComponent_ng_container_4_mat_option_5_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "mat-option", 4);
-        core.ɵɵtext(1);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var hourType_r13 = ctx.$implicit;
-        core.ɵɵproperty("value", hourType_r13);
-        core.ɵɵadvance(1);
-        core.ɵɵtextInterpolate(hourType_r13);
-    } }
-    function TimePickerComponent_ng_container_4_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵelement(1, "span");
-        core.ɵɵtext(2, ". ");
-        core.ɵɵelementStart(3, "mat-form-field");
-        core.ɵɵelementStart(4, "mat-select", 7);
-        core.ɵɵtemplate(5, TimePickerComponent_ng_container_4_mat_option_5_Template, 2, 2, "mat-option", 3);
-        core.ɵɵelementEnd();
-        core.ɵɵelementEnd();
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var ctx_r3 = core.ɵɵnextContext();
-        core.ɵɵadvance(5);
-        core.ɵɵproperty("ngForOf", ctx_r3.hourTypes);
-    } }
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: src/cron-time-picker.component.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
+     * @record
+     */
+    function TimePickerModel() { }
+    if (false) {
+        /** @type {?} */
+        TimePickerModel.prototype.days;
+        /** @type {?} */
+        TimePickerModel.prototype.hours;
+        /** @type {?} */
+        TimePickerModel.prototype.minutes;
+        /** @type {?} */
+        TimePickerModel.prototype.seconds;
+    }
+    /**
+     * @param {?} start
+     * @param {?} end
+     * @return {?}
+     */
     function range(start, end) {
         var i;
         return __generator(this, function (_a) {
@@ -352,52 +257,62 @@
             this.hourTypes = ['AM', 'PM'];
         }
         Object.defineProperty(TimePickerComponent.prototype, "hours", {
-            get: function () {
+            get: /**
+             * @return {?}
+             */
+            function () {
                 return this.use24HourTime ? __spread(range(0, 23)) : __spread(range(0, 12));
             },
             enumerable: true,
             configurable: true
         });
-        /** @nocollapse */ TimePickerComponent.ɵfac = function TimePickerComponent_Factory(t) { return new (t || TimePickerComponent)(core.ɵɵdirectiveInject(forms.ControlContainer)); };
-        /** @nocollapse */ TimePickerComponent.ɵcmp = core.ɵɵdefineComponent({ type: TimePickerComponent, selectors: [["cron-time-picker"]], inputs: { disabled: "disabled", use24HourTime: "use24HourTime", hideHours: "hideHours", hideMinutes: "hideMinutes", hideSeconds: "hideSeconds" }, features: [core.ɵɵProvidersFeature([])], decls: 5, vars: 5, consts: [[3, "formGroup"], [4, "ngIf"], ["formControlName", "hours"], [3, "value", 4, "ngFor", "ngForOf"], [3, "value"], ["formControlName", "minutes"], ["formControlName", "seconds"], ["formControlName", "hourType"]], template: function TimePickerComponent_Template(rf, ctx) { if (rf & 1) {
-                core.ɵɵelementStart(0, "span", 0);
-                core.ɵɵtemplate(1, TimePickerComponent_ng_container_1_Template, 6, 1, "ng-container", 1);
-                core.ɵɵtemplate(2, TimePickerComponent_ng_container_2_Template, 7, 2, "ng-container", 1);
-                core.ɵɵtemplate(3, TimePickerComponent_ng_container_3_Template, 7, 2, "ng-container", 1);
-                core.ɵɵtemplate(4, TimePickerComponent_ng_container_4_Template, 6, 1, "ng-container", 1);
-                core.ɵɵelementEnd();
-            } if (rf & 2) {
-                core.ɵɵproperty("formGroup", ctx.parent.control);
-                core.ɵɵadvance(1);
-                core.ɵɵproperty("ngIf", !ctx.hideHours);
-                core.ɵɵadvance(1);
-                core.ɵɵproperty("ngIf", !ctx.hideMinutes);
-                core.ɵɵadvance(1);
-                core.ɵɵproperty("ngIf", !ctx.hideSeconds);
-                core.ɵɵadvance(1);
-                core.ɵɵproperty("ngIf", !ctx.use24HourTime);
-            } }, directives: [forms.NgControlStatusGroup, forms.FormGroupDirective, common.NgIf, formField.MatFormField, formField.MatLabel, select.MatSelect, forms.NgControlStatus, forms.FormControlName, common.NgForOf, core$1.MatOption], encapsulation: 2 });
+        TimePickerComponent.decorators = [
+            { type: core.Component, args: [{
+                        selector: 'cron-time-picker',
+                        template: "<span [formGroup]=\"parent.control\">\n\n  <ng-container *ngIf=\"!hideHours\">\n    <mat-form-field>\n      <mat-label>Hour(s)</mat-label>\n      <mat-select formControlName=\"hours\">\n        <mat-option *ngFor=\"let hour of hours\" [value]=\"hour\">{{hour}}</mat-option>\n      </mat-select>\n    </mat-form-field>\n  </ng-container>\n  <ng-container *ngIf=\"!hideMinutes\">\n    <span *ngIf=\"!hideHours\">:</span>\n    <mat-form-field>\n      <mat-label>Minute(s)</mat-label>\n      <mat-select formControlName=\"minutes\">\n        <mat-option *ngFor=\"let minute of minutes\" [value]=\"minute\">{{minute}}</mat-option>\n      </mat-select>\n    </mat-form-field>\n  </ng-container>\n\n  <ng-container *ngIf=\"!hideSeconds\">\n    <span *ngIf=\"!hideMinutes\">:</span>\n    <mat-form-field>\n      <mat-label>Second(s)</mat-label>\n      <mat-select formControlName=\"seconds\">\n        <mat-option *ngFor=\"let second of seconds\" [value]=\"second\">{{second}}</mat-option>\n      </mat-select>\n    </mat-form-field>\n  </ng-container>\n\n  <ng-container *ngIf=\"!use24HourTime\">\n    <span></span>.\n    <mat-form-field>\n      <mat-select formControlName=\"hourType\">\n        <mat-option *ngFor=\"let hourType of hourTypes\" [value]=\"hourType\">{{hourType}}</mat-option>\n      </mat-select>\n    </mat-form-field>\n  </ng-container>\n</span>\n",
+                        providers: []
+                    }] }
+        ];
+        /** @nocollapse */
+        TimePickerComponent.ctorParameters = function () { return [
+            { type: forms.ControlContainer }
+        ]; };
+        TimePickerComponent.propDecorators = {
+            disabled: [{ type: core.Input }],
+            use24HourTime: [{ type: core.Input }],
+            hideHours: [{ type: core.Input }],
+            hideMinutes: [{ type: core.Input }],
+            hideSeconds: [{ type: core.Input }]
+        };
         return TimePickerComponent;
     }());
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(TimePickerComponent, [{
-            type: core.Component,
-            args: [{
-                    selector: 'cron-time-picker',
-                    templateUrl: './cron-time-picker.template.html',
-                    providers: []
-                }]
-        }], function () { return [{ type: forms.ControlContainer }]; }, { disabled: [{
-                type: core.Input
-            }], use24HourTime: [{
-                type: core.Input
-            }], hideHours: [{
-                type: core.Input
-            }], hideMinutes: [{
-                type: core.Input
-            }], hideSeconds: [{
-                type: core.Input
-            }] }); })();
+    if (false) {
+        /** @type {?} */
+        TimePickerComponent.prototype.disabled;
+        /** @type {?} */
+        TimePickerComponent.prototype.use24HourTime;
+        /** @type {?} */
+        TimePickerComponent.prototype.hideHours;
+        /** @type {?} */
+        TimePickerComponent.prototype.hideMinutes;
+        /** @type {?} */
+        TimePickerComponent.prototype.hideSeconds;
+        /** @type {?} */
+        TimePickerComponent.prototype.minutes;
+        /** @type {?} */
+        TimePickerComponent.prototype.seconds;
+        /** @type {?} */
+        TimePickerComponent.prototype.hourTypes;
+        /** @type {?} */
+        TimePickerComponent.prototype.parent;
+    }
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: src/enums.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /** @type {?} */
     var Days = {
         'SUN': "Sunday",
         'MON': "Monday",
@@ -407,6 +322,7 @@
         'FRI': "Friday",
         'SAT': "Saturday"
     };
+    /** @type {?} */
     var MonthWeeks = {
         '#1': "First",
         '#2': "Second",
@@ -415,513 +331,47 @@
         '#5': "Fifth",
         'L': "Last"
     };
-
-    (function (Months) {
-        Months[Months["January"] = 1] = "January";
-        Months[Months["February"] = 2] = "February";
-        Months[Months["March"] = 3] = "March";
-        Months[Months["April"] = 4] = "April";
-        Months[Months["May"] = 5] = "May";
-        Months[Months["June"] = 6] = "June";
-        Months[Months["July"] = 7] = "July";
-        Months[Months["August"] = 8] = "August";
-        Months[Months["September"] = 9] = "September";
-        Months[Months["October"] = 10] = "October";
-        Months[Months["November"] = 11] = "November";
-        Months[Months["December"] = 12] = "December";
-    })(exports.Months || (exports.Months = {}));
+    /** @enum {number} */
+    var Months = {
+        January: 1,
+        February: 2,
+        March: 3,
+        April: 4,
+        May: 5,
+        June: 6,
+        July: 7,
+        August: 8,
+        September: 9,
+        October: 10,
+        November: 11,
+        December: 12,
+    };
+    Months[Months.January] = 'January';
+    Months[Months.February] = 'February';
+    Months[Months.March] = 'March';
+    Months[Months.April] = 'April';
+    Months[Months.May] = 'May';
+    Months[Months.June] = 'June';
+    Months[Months.July] = 'July';
+    Months[Months.August] = 'August';
+    Months[Months.September] = 'September';
+    Months[Months.October] = 'October';
+    Months[Months.November] = 'November';
+    Months[Months.December] = 'December';
     ;
 
-    function CronGenComponent_mat_tab_2_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "mat-tab", 9);
-        core.ɵɵelementStart(1, "div", 10);
-        core.ɵɵelementStart(2, "span", 11);
-        core.ɵɵtext(3, "Every ");
-        core.ɵɵelementEnd();
-        core.ɵɵelement(4, "cron-time-picker", 12);
-        core.ɵɵelementEnd();
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var ctx_r0 = core.ɵɵnextContext();
-        core.ɵɵadvance(4);
-        core.ɵɵproperty("formGroup", ctx_r0.minutesForm)("use24HourTime", ctx_r0.options.use24HourTime)("hideHours", true)("hideSeconds", ctx_r0.options.hideSeconds || !ctx_r0.isCronFlavorQuartz);
-    } }
-    function CronGenComponent_mat_tab_3_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "mat-tab", 13);
-        core.ɵɵelementStart(1, "div", 10);
-        core.ɵɵelementStart(2, "span", 11);
-        core.ɵɵtext(3, "Every ");
-        core.ɵɵelementEnd();
-        core.ɵɵelement(4, "cron-time-picker", 14);
-        core.ɵɵelementEnd();
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var ctx_r1 = core.ɵɵnextContext();
-        core.ɵɵadvance(4);
-        core.ɵɵproperty("formGroup", ctx_r1.hourlyForm)("use24HourTime", ctx_r1.options.use24HourTime)("hideSeconds", ctx_r1.options.hideSeconds || !ctx_r1.isCronFlavorQuartz);
-    } }
-    function CronGenComponent_mat_tab_4_mat_option_10_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "mat-option", 25);
-        core.ɵɵtext(1);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var monthDay_r8 = ctx.$implicit;
-        core.ɵɵproperty("value", monthDay_r8);
-        core.ɵɵadvance(1);
-        core.ɵɵtextInterpolate1(" ", monthDay_r8, " ");
-    } }
-    function CronGenComponent_mat_tab_4_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "mat-tab", 15);
-        core.ɵɵelementStart(1, "div", 16);
-        core.ɵɵelementStart(2, "mat-radio-group", 17);
-        core.ɵɵelementStart(3, "mat-radio-button", 18);
-        core.ɵɵelementStart(4, "span", 11);
-        core.ɵɵtext(5, "Every ");
-        core.ɵɵelementEnd();
-        core.ɵɵelementStart(6, "mat-form-field", 19);
-        core.ɵɵelementStart(7, "mat-label");
-        core.ɵɵtext(8, "Day(s)");
-        core.ɵɵelementEnd();
-        core.ɵɵelementStart(9, "mat-select", 20);
-        core.ɵɵtemplate(10, CronGenComponent_mat_tab_4_mat_option_10_Template, 2, 2, "mat-option", 21);
-        core.ɵɵelementEnd();
-        core.ɵɵelementEnd();
-        core.ɵɵtext(11, " at ");
-        core.ɵɵelement(12, "cron-time-picker", 22);
-        core.ɵɵelementEnd();
-        core.ɵɵelementStart(13, "mat-radio-button", 23);
-        core.ɵɵelementStart(14, "span");
-        core.ɵɵtext(15, "Week Day (MON-FRI) at ");
-        core.ɵɵelementEnd();
-        core.ɵɵelement(16, "cron-time-picker", 24);
-        core.ɵɵelementEnd();
-        core.ɵɵelementEnd();
-        core.ɵɵelementEnd();
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var ctx_r2 = core.ɵɵnextContext();
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("formGroup", ctx_r2.dailyForm);
-        core.ɵɵadvance(9);
-        core.ɵɵproperty("ngForOf", ctx_r2.selectOptions.monthDays);
-        core.ɵɵadvance(2);
-        core.ɵɵproperty("use24HourTime", ctx_r2.options.use24HourTime)("hideSeconds", ctx_r2.options.hideSeconds || !ctx_r2.isCronFlavorQuartz);
-        core.ɵɵadvance(4);
-        core.ɵɵproperty("use24HourTime", ctx_r2.options.use24HourTime)("hideSeconds", ctx_r2.options.hideSeconds || !ctx_r2.isCronFlavorQuartz);
-    } }
-    function CronGenComponent_mat_tab_5_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "mat-tab", 26);
-        core.ɵɵelementStart(1, "div", 10);
-        core.ɵɵelementStart(2, "span", 11);
-        core.ɵɵtext(3, "Every ");
-        core.ɵɵelementEnd();
-        core.ɵɵelementStart(4, "div", 27);
-        core.ɵɵelementStart(5, "mat-checkbox", 28);
-        core.ɵɵtext(6, "Monday");
-        core.ɵɵelementEnd();
-        core.ɵɵelementStart(7, "mat-checkbox", 29);
-        core.ɵɵtext(8, "Tuesday");
-        core.ɵɵelementEnd();
-        core.ɵɵelementStart(9, "mat-checkbox", 30);
-        core.ɵɵtext(10, "Wednesday");
-        core.ɵɵelementEnd();
-        core.ɵɵelementStart(11, "mat-checkbox", 31);
-        core.ɵɵtext(12, "Thursday");
-        core.ɵɵelementEnd();
-        core.ɵɵelementStart(13, "mat-checkbox", 32);
-        core.ɵɵtext(14, "Friday");
-        core.ɵɵelementEnd();
-        core.ɵɵelementStart(15, "mat-checkbox", 33);
-        core.ɵɵtext(16, "Saturday");
-        core.ɵɵelementEnd();
-        core.ɵɵelementStart(17, "mat-checkbox", 34);
-        core.ɵɵtext(18, "Sunday");
-        core.ɵɵelementEnd();
-        core.ɵɵelementEnd();
-        core.ɵɵelementStart(19, "span", 11);
-        core.ɵɵtext(20, "at time ");
-        core.ɵɵelementEnd();
-        core.ɵɵelement(21, "cron-time-picker", 14);
-        core.ɵɵelementEnd();
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var ctx_r3 = core.ɵɵnextContext();
-        core.ɵɵadvance(4);
-        core.ɵɵproperty("formGroup", ctx_r3.weeklyForm);
-        core.ɵɵadvance(17);
-        core.ɵɵproperty("formGroup", ctx_r3.weeklyForm)("use24HourTime", ctx_r3.options.use24HourTime)("hideSeconds", ctx_r3.options.hideSeconds || !ctx_r3.isCronFlavorQuartz);
-    } }
-    function CronGenComponent_mat_tab_6_ng_container_6_option_5_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "option", 25);
-        core.ɵɵtext(1);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var monthDaysWithLast_r16 = ctx.$implicit;
-        var ctx_r15 = core.ɵɵnextContext(3);
-        core.ɵɵproperty("value", monthDaysWithLast_r16);
-        core.ɵɵadvance(1);
-        core.ɵɵtextInterpolate1(" ", ctx_r15.monthDayDisplay(monthDaysWithLast_r16), " ");
-    } }
-    function CronGenComponent_mat_tab_6_ng_container_6_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵelementStart(1, "mat-form-field");
-        core.ɵɵelementStart(2, "mat-label");
-        core.ɵɵtext(3, "Day");
-        core.ɵɵelementEnd();
-        core.ɵɵelementStart(4, "mat-select", 47);
-        core.ɵɵtemplate(5, CronGenComponent_mat_tab_6_ng_container_6_option_5_Template, 2, 2, "option", 21);
-        core.ɵɵelementEnd();
-        core.ɵɵelementEnd();
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var ctx_r9 = core.ɵɵnextContext(2);
-        core.ɵɵadvance(5);
-        core.ɵɵproperty("ngForOf", ctx_r9.selectOptions.monthDaysWithLasts);
-    } }
-    function CronGenComponent_mat_tab_6_ng_container_7_mat_option_5_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "mat-option", 25);
-        core.ɵɵtext(1);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var monthDaysWithOutLast_r18 = ctx.$implicit;
-        var ctx_r17 = core.ɵɵnextContext(3);
-        core.ɵɵproperty("value", monthDaysWithOutLast_r18);
-        core.ɵɵadvance(1);
-        core.ɵɵtextInterpolate1(" ", ctx_r17.monthDayDisplay(monthDaysWithOutLast_r18), " ");
-    } }
-    function CronGenComponent_mat_tab_6_ng_container_7_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵelementStart(1, "mat-form-field");
-        core.ɵɵelementStart(2, "mat-label");
-        core.ɵɵtext(3, "Day");
-        core.ɵɵelementEnd();
-        core.ɵɵelementStart(4, "mat-select", 47);
-        core.ɵɵtemplate(5, CronGenComponent_mat_tab_6_ng_container_7_mat_option_5_Template, 2, 2, "mat-option", 21);
-        core.ɵɵelementEnd();
-        core.ɵɵelementEnd();
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var ctx_r10 = core.ɵɵnextContext(2);
-        core.ɵɵadvance(5);
-        core.ɵɵproperty("ngForOf", ctx_r10.selectOptions.monthDaysWithOutLasts);
-    } }
-    function CronGenComponent_mat_tab_6_mat_option_14_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "mat-option", 25);
-        core.ɵɵtext(1);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var month_r19 = ctx.$implicit;
-        core.ɵɵproperty("value", month_r19);
-        core.ɵɵadvance(1);
-        core.ɵɵtextInterpolate1(" ", month_r19, " ");
-    } }
-    function CronGenComponent_mat_tab_6_mat_option_24_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "mat-option", 25);
-        core.ɵɵtext(1);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var monthWeek_r20 = ctx.$implicit;
-        var ctx_r12 = core.ɵɵnextContext(2);
-        core.ɵɵproperty("value", monthWeek_r20);
-        core.ɵɵadvance(1);
-        core.ɵɵtextInterpolate1(" ", ctx_r12.monthWeekDisplay(monthWeek_r20), " ");
-    } }
-    function CronGenComponent_mat_tab_6_mat_option_29_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "mat-option", 25);
-        core.ɵɵtext(1);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var day_r21 = ctx.$implicit;
-        var ctx_r13 = core.ɵɵnextContext(2);
-        core.ɵɵproperty("value", day_r21);
-        core.ɵɵadvance(1);
-        core.ɵɵtextInterpolate1(" ", ctx_r13.dayDisplay(day_r21), " ");
-    } }
-    function CronGenComponent_mat_tab_6_mat_option_35_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "mat-option", 25);
-        core.ɵɵtext(1);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var month_r22 = ctx.$implicit;
-        core.ɵɵproperty("value", month_r22);
-        core.ɵɵadvance(1);
-        core.ɵɵtextInterpolate1(" ", month_r22, " ");
-    } }
-    function CronGenComponent_mat_tab_6_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "mat-tab", 35);
-        core.ɵɵelementStart(1, "div", 16);
-        core.ɵɵelementStart(2, "mat-radio-group", 36);
-        core.ɵɵelementStart(3, "mat-radio-button", 37);
-        core.ɵɵelementStart(4, "span", 38);
-        core.ɵɵtext(5, " On the ");
-        core.ɵɵtemplate(6, CronGenComponent_mat_tab_6_ng_container_6_Template, 6, 1, "ng-container", 39);
-        core.ɵɵtemplate(7, CronGenComponent_mat_tab_6_ng_container_7_Template, 6, 1, "ng-container", 39);
-        core.ɵɵtext(8, " of every ");
-        core.ɵɵelementContainerStart(9);
-        core.ɵɵelementStart(10, "mat-form-field");
-        core.ɵɵelementStart(11, "mat-label");
-        core.ɵɵtext(12, "Month");
-        core.ɵɵelementEnd();
-        core.ɵɵelementStart(13, "mat-select", 40);
-        core.ɵɵtemplate(14, CronGenComponent_mat_tab_6_mat_option_14_Template, 2, 2, "mat-option", 21);
-        core.ɵɵelementEnd();
-        core.ɵɵelementEnd();
-        core.ɵɵelementContainerEnd();
-        core.ɵɵtext(15, " at time ");
-        core.ɵɵelement(16, "cron-time-picker", 41);
-        core.ɵɵelementEnd();
-        core.ɵɵelementEnd();
-        core.ɵɵelementStart(17, "mat-radio-button", 42);
-        core.ɵɵelementStart(18, "span", 43);
-        core.ɵɵtext(19, " On the ");
-        core.ɵɵelementStart(20, "mat-form-field");
-        core.ɵɵelementStart(21, "mat-label");
-        core.ɵɵtext(22, "Week");
-        core.ɵɵelementEnd();
-        core.ɵɵelementStart(23, "mat-select", 44);
-        core.ɵɵtemplate(24, CronGenComponent_mat_tab_6_mat_option_24_Template, 2, 2, "mat-option", 21);
-        core.ɵɵelementEnd();
-        core.ɵɵelementEnd();
-        core.ɵɵelementStart(25, "mat-form-field");
-        core.ɵɵelementStart(26, "mat-label");
-        core.ɵɵtext(27, "Day");
-        core.ɵɵelementEnd();
-        core.ɵɵelementStart(28, "mat-select", 45);
-        core.ɵɵtemplate(29, CronGenComponent_mat_tab_6_mat_option_29_Template, 2, 2, "mat-option", 21);
-        core.ɵɵelementEnd();
-        core.ɵɵelementEnd();
-        core.ɵɵtext(30, " of every ");
-        core.ɵɵelementStart(31, "mat-form-field");
-        core.ɵɵelementStart(32, "mat-label");
-        core.ɵɵtext(33, "Month");
-        core.ɵɵelementEnd();
-        core.ɵɵelementStart(34, "mat-select", 46);
-        core.ɵɵtemplate(35, CronGenComponent_mat_tab_6_mat_option_35_Template, 2, 2, "mat-option", 21);
-        core.ɵɵelementEnd();
-        core.ɵɵelementEnd();
-        core.ɵɵtext(36, " at time ");
-        core.ɵɵelement(37, "cron-time-picker", 14);
-        core.ɵɵelementEnd();
-        core.ɵɵelementEnd();
-        core.ɵɵelementEnd();
-        core.ɵɵelementEnd();
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var ctx_r4 = core.ɵɵnextContext();
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("formGroup", ctx_r4.monthlyForm);
-        core.ɵɵadvance(5);
-        core.ɵɵproperty("ngIf", ctx_r4.options.cronFlavor === "quartz");
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngIf", ctx_r4.options.cronFlavor === "standard");
-        core.ɵɵadvance(6);
-        core.ɵɵproperty("ngClass", ctx_r4.options.formSelectClass);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngForOf", ctx_r4.selectOptions.months);
-        core.ɵɵadvance(2);
-        core.ɵɵproperty("disabled", ctx_r4.disabled)("formGroup", ctx_r4.monthlyForm.controls.specificDay)("use24HourTime", ctx_r4.options.use24HourTime)("hideSeconds", ctx_r4.options.hideSeconds || !ctx_r4.isCronFlavorQuartz);
-        core.ɵɵadvance(7);
-        core.ɵɵproperty("ngClass", ctx_r4.options.formSelectClass);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngForOf", ctx_r4.selectOptions.monthWeeks);
-        core.ɵɵadvance(4);
-        core.ɵɵproperty("ngClass", ctx_r4.options.formSelectClass);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngForOf", ctx_r4.selectOptions.days);
-        core.ɵɵadvance(6);
-        core.ɵɵproperty("ngForOf", ctx_r4.selectOptions.months);
-        core.ɵɵadvance(2);
-        core.ɵɵproperty("formGroup", ctx_r4.monthlyForm.controls.specificWeekDay)("use24HourTime", ctx_r4.options.use24HourTime)("hideSeconds", ctx_r4.options.hideSeconds || !ctx_r4.isCronFlavorQuartz);
-    } }
-    function CronGenComponent_mat_tab_7_mat_form_field_5_mat_option_4_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "mat-option", 25);
-        core.ɵɵtext(1);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var monthDaysWithLast_r30 = ctx.$implicit;
-        var ctx_r29 = core.ɵɵnextContext(3);
-        core.ɵɵproperty("value", monthDaysWithLast_r30);
-        core.ɵɵadvance(1);
-        core.ɵɵtextInterpolate1(" ", ctx_r29.monthDayDisplay(monthDaysWithLast_r30), " ");
-    } }
-    function CronGenComponent_mat_tab_7_mat_form_field_5_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "mat-form-field", 51);
-        core.ɵɵelementStart(1, "mat-label");
-        core.ɵɵtext(2, "Day");
-        core.ɵɵelementEnd();
-        core.ɵɵelementStart(3, "mat-select", 47);
-        core.ɵɵtemplate(4, CronGenComponent_mat_tab_7_mat_form_field_5_mat_option_4_Template, 2, 2, "mat-option", 21);
-        core.ɵɵelementEnd();
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var ctx_r23 = core.ɵɵnextContext(2);
-        core.ɵɵadvance(4);
-        core.ɵɵproperty("ngForOf", ctx_r23.selectOptions.monthDaysWithLasts);
-    } }
-    function CronGenComponent_mat_tab_7_mat_form_field_6_mat_option_4_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "mat-option", 25);
-        core.ɵɵtext(1);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var monthDaysWithOutLast_r32 = ctx.$implicit;
-        var ctx_r31 = core.ɵɵnextContext(3);
-        core.ɵɵproperty("value", monthDaysWithOutLast_r32);
-        core.ɵɵadvance(1);
-        core.ɵɵtextInterpolate1(" ", ctx_r31.monthDayDisplay(monthDaysWithOutLast_r32), " ");
-    } }
-    function CronGenComponent_mat_tab_7_mat_form_field_6_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "mat-form-field", 51);
-        core.ɵɵelementStart(1, "mat-label");
-        core.ɵɵtext(2, "Day");
-        core.ɵɵelementEnd();
-        core.ɵɵelementStart(3, "mat-select", 47);
-        core.ɵɵtemplate(4, CronGenComponent_mat_tab_7_mat_form_field_6_mat_option_4_Template, 2, 2, "mat-option", 21);
-        core.ɵɵelementEnd();
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var ctx_r24 = core.ɵɵnextContext(2);
-        core.ɵɵadvance(4);
-        core.ɵɵproperty("ngForOf", ctx_r24.selectOptions.monthDaysWithOutLasts);
-    } }
-    function CronGenComponent_mat_tab_7_mat_option_12_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "mat-option", 25);
-        core.ɵɵtext(1);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var month_r33 = ctx.$implicit;
-        var ctx_r25 = core.ɵɵnextContext(2);
-        core.ɵɵproperty("value", month_r33);
-        core.ɵɵadvance(1);
-        core.ɵɵtextInterpolate1(" ", ctx_r25.monthDisplay(month_r33), " ");
-    } }
-    function CronGenComponent_mat_tab_7_mat_option_21_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "mat-option", 25);
-        core.ɵɵtext(1);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var monthWeek_r34 = ctx.$implicit;
-        var ctx_r26 = core.ɵɵnextContext(2);
-        core.ɵɵproperty("value", monthWeek_r34);
-        core.ɵɵadvance(1);
-        core.ɵɵtextInterpolate1(" ", ctx_r26.monthWeekDisplay(monthWeek_r34), " ");
-    } }
-    function CronGenComponent_mat_tab_7_mat_option_26_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "mat-option", 25);
-        core.ɵɵtext(1);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var day_r35 = ctx.$implicit;
-        var ctx_r27 = core.ɵɵnextContext(2);
-        core.ɵɵproperty("value", day_r35);
-        core.ɵɵadvance(1);
-        core.ɵɵtextInterpolate1(" ", ctx_r27.dayDisplay(day_r35), " ");
-    } }
-    function CronGenComponent_mat_tab_7_mat_option_32_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "mat-option", 25);
-        core.ɵɵtext(1);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var month_r36 = ctx.$implicit;
-        var ctx_r28 = core.ɵɵnextContext(2);
-        core.ɵɵproperty("value", month_r36);
-        core.ɵɵadvance(1);
-        core.ɵɵtextInterpolate1(" ", ctx_r28.monthDisplay(month_r36), " ");
-    } }
-    function CronGenComponent_mat_tab_7_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "mat-tab", 48);
-        core.ɵɵelementStart(1, "div", 16);
-        core.ɵɵelementStart(2, "mat-radio-group", 36);
-        core.ɵɵelementStart(3, "mat-radio-button", 49);
-        core.ɵɵtext(4, " On the ");
-        core.ɵɵtemplate(5, CronGenComponent_mat_tab_7_mat_form_field_5_Template, 5, 1, "mat-form-field", 50);
-        core.ɵɵtemplate(6, CronGenComponent_mat_tab_7_mat_form_field_6_Template, 5, 1, "mat-form-field", 50);
-        core.ɵɵtext(7, " of ");
-        core.ɵɵelementStart(8, "mat-form-field", 51);
-        core.ɵɵelementStart(9, "mat-label");
-        core.ɵɵtext(10, "Month");
-        core.ɵɵelementEnd();
-        core.ɵɵelementStart(11, "mat-select", 52);
-        core.ɵɵtemplate(12, CronGenComponent_mat_tab_7_mat_option_12_Template, 2, 2, "mat-option", 21);
-        core.ɵɵelementEnd();
-        core.ɵɵelementEnd();
-        core.ɵɵtext(13, " at time ");
-        core.ɵɵelement(14, "cron-time-picker", 41);
-        core.ɵɵelementEnd();
-        core.ɵɵelementStart(15, "mat-radio-button", 53);
-        core.ɵɵtext(16, " On the ");
-        core.ɵɵelementStart(17, "mat-form-field", 54);
-        core.ɵɵelementStart(18, "mat-label");
-        core.ɵɵtext(19, "Week");
-        core.ɵɵelementEnd();
-        core.ɵɵelementStart(20, "mat-select", 55);
-        core.ɵɵtemplate(21, CronGenComponent_mat_tab_7_mat_option_21_Template, 2, 2, "mat-option", 21);
-        core.ɵɵelementEnd();
-        core.ɵɵelementEnd();
-        core.ɵɵelementStart(22, "mat-form-field", 54);
-        core.ɵɵelementStart(23, "mat-label");
-        core.ɵɵtext(24, "Day");
-        core.ɵɵelementEnd();
-        core.ɵɵelementStart(25, "mat-select", 56);
-        core.ɵɵtemplate(26, CronGenComponent_mat_tab_7_mat_option_26_Template, 2, 2, "mat-option", 21);
-        core.ɵɵelementEnd();
-        core.ɵɵelementEnd();
-        core.ɵɵtext(27, " of ");
-        core.ɵɵelementStart(28, "mat-form-field", 54);
-        core.ɵɵelementStart(29, "mat-label");
-        core.ɵɵtext(30, "Month");
-        core.ɵɵelementEnd();
-        core.ɵɵelementStart(31, "mat-select", 52);
-        core.ɵɵtemplate(32, CronGenComponent_mat_tab_7_mat_option_32_Template, 2, 2, "mat-option", 21);
-        core.ɵɵelementEnd();
-        core.ɵɵelementEnd();
-        core.ɵɵtext(33, " at time ");
-        core.ɵɵelement(34, "cron-time-picker", 41);
-        core.ɵɵelementEnd();
-        core.ɵɵelementEnd();
-        core.ɵɵelementEnd();
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var ctx_r5 = core.ɵɵnextContext();
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("formGroup", ctx_r5.yearlyForm);
-        core.ɵɵadvance(4);
-        core.ɵɵproperty("ngIf", ctx_r5.options.cronFlavor === "quartz");
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngIf", ctx_r5.options.cronFlavor === "standard");
-        core.ɵɵadvance(6);
-        core.ɵɵproperty("ngForOf", ctx_r5.selectOptions.months);
-        core.ɵɵadvance(2);
-        core.ɵɵproperty("disabled", ctx_r5.disabled)("formGroup", ctx_r5.yearlyForm.controls.specificMonthDay)("use24HourTime", ctx_r5.options.use24HourTime)("hideSeconds", ctx_r5.options.hideSeconds || !ctx_r5.isCronFlavorQuartz);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngClass", ctx_r5.state.formRadioClass);
-        core.ɵɵadvance(6);
-        core.ɵɵproperty("ngForOf", ctx_r5.selectOptions.monthWeeks);
-        core.ɵɵadvance(5);
-        core.ɵɵproperty("ngForOf", ctx_r5.selectOptions.days);
-        core.ɵɵadvance(6);
-        core.ɵɵproperty("ngForOf", ctx_r5.selectOptions.months);
-        core.ɵɵadvance(2);
-        core.ɵɵproperty("disabled", ctx_r5.disabled)("formGroup", ctx_r5.yearlyForm.controls.specificMonthWeek)("use24HourTime", ctx_r5.options.use24HourTime)("hideSeconds", ctx_r5.options.hideSeconds || !ctx_r5.isCronFlavorQuartz);
-    } }
-    function CronGenComponent_mat_tab_8_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "mat-tab", 57);
-        core.ɵɵelementStart(1, "div", 16);
-        core.ɵɵelementStart(2, "mat-form-field");
-        core.ɵɵelementStart(3, "mat-label");
-        core.ɵɵtext(4, "Expression");
-        core.ɵɵelementEnd();
-        core.ɵɵelement(5, "input", 58);
-        core.ɵɵelementEnd();
-        core.ɵɵelementEnd();
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var ctx_r6 = core.ɵɵnextContext();
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("formGroup", ctx_r6.advancedForm);
-    } }
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: src/cron-editor.component.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /** @type {?} */
     var CRON_VALUE_ACCESSOR = {
         provide: forms.NG_VALUE_ACCESSOR,
-        useExisting: core.forwardRef(function () { return CronGenComponent; }),
+        useExisting: core.forwardRef((/**
+         * @return {?}
+         */
+        function () { return CronGenComponent; })),
         multi: true,
     };
     var CronGenComponent = /** @class */ (function () {
@@ -930,18 +380,32 @@
             this.selectOptions = this.getSelectOptions();
             this.localCron = '0 0 1/1 * *';
             /*
-             * ControlValueAccessor
+               * ControlValueAccessor
+               */
+            this.onChange = (/**
+             * @param {?} _
+             * @return {?}
              */
-            this.onChange = function (_) {
-            };
-            this.onTouched = function () {
-            };
+            function (_) {
+            });
+            this.onTouched = (/**
+             * @return {?}
+             */
+            function () {
+            });
         }
         Object.defineProperty(CronGenComponent.prototype, "cron", {
-            get: function () {
+            get: /**
+             * @return {?}
+             */
+            function () {
                 return this.localCron;
             },
-            set: function (value) {
+            set: /**
+             * @param {?} value
+             * @return {?}
+             */
+            function (value) {
                 this.localCron = value;
                 this.onChange(value);
             },
@@ -949,35 +413,50 @@
             configurable: true
         });
         Object.defineProperty(CronGenComponent.prototype, "isCronFlavorQuartz", {
-            get: function () {
+            get: /**
+             * @return {?}
+             */
+            function () {
                 return this.options.cronFlavor === 'quartz';
             },
             enumerable: true,
             configurable: true
         });
         Object.defineProperty(CronGenComponent.prototype, "isCronFlavorStandard", {
-            get: function () {
+            get: /**
+             * @return {?}
+             */
+            function () {
                 return this.options.cronFlavor === 'standard';
             },
             enumerable: true,
             configurable: true
         });
         Object.defineProperty(CronGenComponent.prototype, "yearDefaultChar", {
-            get: function () {
+            get: /**
+             * @return {?}
+             */
+            function () {
                 return this.options.cronFlavor === 'quartz' ? '*' : '';
             },
             enumerable: true,
             configurable: true
         });
         Object.defineProperty(CronGenComponent.prototype, "weekDayDefaultChar", {
-            get: function () {
+            get: /**
+             * @return {?}
+             */
+            function () {
                 return this.options.cronFlavor === 'quartz' ? '?' : '*';
             },
             enumerable: true,
             configurable: true
         });
         Object.defineProperty(CronGenComponent.prototype, "monthDayDefaultChar", {
-            get: function () {
+            get: /**
+             * @return {?}
+             */
+            function () {
                 return this.options.cronFlavor === 'quartz' ? '?' : '*';
             },
             enumerable: true,
@@ -986,7 +465,21 @@
         /* Update the cron output to that of the selected tab.
          * The cron output value is updated whenever a form is updated. To make it change in response to tab selection, we simply reset
          * the value of the form that goes into focus. */
-        CronGenComponent.prototype.onTabFocus = function (idx) {
+        /* Update the cron output to that of the selected tab.
+           * The cron output value is updated whenever a form is updated. To make it change in response to tab selection, we simply reset
+           * the value of the form that goes into focus. */
+        /**
+         * @param {?} idx
+         * @return {?}
+         */
+        CronGenComponent.prototype.onTabFocus = /* Update the cron output to that of the selected tab.
+           * The cron output value is updated whenever a form is updated. To make it change in response to tab selection, we simply reset
+           * the value of the form that goes into focus. */
+        /**
+         * @param {?} idx
+         * @return {?}
+         */
+        function (idx) {
             switch (idx) {
                 case 0:
                     this.minutesForm.setValue(this.minutesForm.value);
@@ -1013,7 +506,13 @@
                     throw (new Error('Invalid tab selected'));
             }
         };
-        CronGenComponent.prototype.ngOnInit = function () {
+        /**
+         * @return {?}
+         */
+        CronGenComponent.prototype.ngOnInit = /**
+         * @return {?}
+         */
+        function () {
             return __awaiter(this, void 0, void 0, function () {
                 var _a, defaultHours, defaultMinutes, defaultSeconds;
                 var _this = this;
@@ -1027,13 +526,21 @@
                         minutes: [1],
                         seconds: [0]
                     });
-                    this.minutesForm.valueChanges.subscribe(function (value) { return _this.computeMinutesCron(value); });
+                    this.minutesForm.valueChanges.subscribe((/**
+                     * @param {?} value
+                     * @return {?}
+                     */
+                    function (value) { return _this.computeMinutesCron(value); }));
                     this.hourlyForm = this.fb.group({
                         hours: [1],
                         minutes: [0],
                         seconds: [0]
                     });
-                    this.hourlyForm.valueChanges.subscribe(function (value) { return _this.computeHourlyCron(value); });
+                    this.hourlyForm.valueChanges.subscribe((/**
+                     * @param {?} value
+                     * @return {?}
+                     */
+                    function (value) { return _this.computeHourlyCron(value); }));
                     this.dailyForm = this.fb.group({
                         subTab: ['everyDays'],
                         everyDays: this.fb.group({
@@ -1051,7 +558,11 @@
                             hourType: [this.getHourType(0)]
                         })
                     });
-                    this.dailyForm.valueChanges.subscribe(function (value) { return _this.computeDailyCron(value); });
+                    this.dailyForm.valueChanges.subscribe((/**
+                     * @param {?} value
+                     * @return {?}
+                     */
+                    function (value) { return _this.computeDailyCron(value); }));
                     this.weeklyForm = this.fb.group({
                         MON: [true],
                         TUE: [false],
@@ -1065,7 +576,11 @@
                         seconds: [defaultSeconds],
                         hourType: [this.getHourType(defaultHours)]
                     });
-                    this.weeklyForm.valueChanges.subscribe(function (next) { return _this.computeWeeklyCron(next); });
+                    this.weeklyForm.valueChanges.subscribe((/**
+                     * @param {?} next
+                     * @return {?}
+                     */
+                    function (next) { return _this.computeWeeklyCron(next); }));
                     this.monthlyForm = this.fb.group({
                         subTab: ['specificDay'],
                         specificDay: this.fb.group({
@@ -1086,7 +601,11 @@
                             hourType: [this.getHourType(defaultHours)]
                         })
                     });
-                    this.monthlyForm.valueChanges.subscribe(function (next) { return _this.computeMonthlyCron(next); });
+                    this.monthlyForm.valueChanges.subscribe((/**
+                     * @param {?} next
+                     * @return {?}
+                     */
+                    function (next) { return _this.computeMonthlyCron(next); }));
                     this.yearlyForm = this.fb.group({
                         subTab: ['specificMonthDay'],
                         specificMonthDay: this.fb.group({
@@ -1107,24 +626,62 @@
                             hourType: [this.getHourType(defaultHours)]
                         })
                     });
-                    this.yearlyForm.valueChanges.subscribe(function (next) { return _this.computeYearlyCron(next); });
+                    this.yearlyForm.valueChanges.subscribe((/**
+                     * @param {?} next
+                     * @return {?}
+                     */
+                    function (next) { return _this.computeYearlyCron(next); }));
                     this.advancedForm = this.fb.group({
                         expression: [this.isCronFlavorQuartz ? '0 15 10 L-2 * ? *' : '15 10 2 * *']
                     });
-                    this.advancedForm.controls.expression.valueChanges.subscribe(function (next) { return _this.computeAdvancedExpression(next); });
+                    this.advancedForm.controls.expression.valueChanges.subscribe((/**
+                     * @param {?} next
+                     * @return {?}
+                     */
+                    function (next) { return _this.computeAdvancedExpression(next); }));
                     return [2 /*return*/];
                 });
             });
         };
-        CronGenComponent.prototype.computeMinutesCron = function (state) {
+        /**
+         * @private
+         * @param {?} state
+         * @return {?}
+         */
+        CronGenComponent.prototype.computeMinutesCron = /**
+         * @private
+         * @param {?} state
+         * @return {?}
+         */
+        function (state) {
             this.cron = ((this.isCronFlavorQuartz ? state.seconds : '') + " 0/" + state.minutes + " * 1/1 * " + this.weekDayDefaultChar + " " + this.yearDefaultChar).trim();
             this.cronForm.setValue(this.cron);
         };
-        CronGenComponent.prototype.computeHourlyCron = function (state) {
+        /**
+         * @private
+         * @param {?} state
+         * @return {?}
+         */
+        CronGenComponent.prototype.computeHourlyCron = /**
+         * @private
+         * @param {?} state
+         * @return {?}
+         */
+        function (state) {
             this.cron = ((this.isCronFlavorQuartz ? state.seconds : '') + " " + state.minutes + " 0/" + state.hours + " 1/1 * " + this.weekDayDefaultChar + " " + this.yearDefaultChar).trim();
             this.cronForm.setValue(this.cron);
         };
-        CronGenComponent.prototype.computeDailyCron = function (state) {
+        /**
+         * @private
+         * @param {?} state
+         * @return {?}
+         */
+        CronGenComponent.prototype.computeDailyCron = /**
+         * @private
+         * @param {?} state
+         * @return {?}
+         */
+        function (state) {
             switch (state.subTab) {
                 case 'everyDays':
                     this.cron = ((this.isCronFlavorQuartz ? state.everyDays.seconds : '') + " " + state.everyDays.minutes + " " + this.hourToCron(state.everyDays.hours, state.everyDays.hourType) + " 1/" + state.everyDays.days + " * " + this.weekDayDefaultChar + " " + this.yearDefaultChar).trim();
@@ -1137,14 +694,40 @@
             }
             this.cronForm.setValue(this.cron);
         };
-        CronGenComponent.prototype.computeWeeklyCron = function (state) {
+        /**
+         * @private
+         * @param {?} state
+         * @return {?}
+         */
+        CronGenComponent.prototype.computeWeeklyCron = /**
+         * @private
+         * @param {?} state
+         * @return {?}
+         */
+        function (state) {
+            /** @type {?} */
             var days = this.selectOptions.days
-                .reduce(function (acc, day) { return state[day] ? acc.concat([day]) : acc; }, [])
+                .reduce((/**
+             * @param {?} acc
+             * @param {?} day
+             * @return {?}
+             */
+            function (acc, day) { return state[day] ? acc.concat([day]) : acc; }), [])
                 .join(',');
             this.cron = ((this.isCronFlavorQuartz ? state.seconds : '') + " " + state.minutes + " " + this.hourToCron(state.hours, state.hourType) + " " + this.monthDayDefaultChar + " * " + days + " " + this.yearDefaultChar).trim();
             this.cronForm.setValue(this.cron);
         };
-        CronGenComponent.prototype.computeMonthlyCron = function (state) {
+        /**
+         * @private
+         * @param {?} state
+         * @return {?}
+         */
+        CronGenComponent.prototype.computeMonthlyCron = /**
+         * @private
+         * @param {?} state
+         * @return {?}
+         */
+        function (state) {
             switch (state.subTab) {
                 case 'specificDay':
                     this.cron = ((this.isCronFlavorQuartz ? state.specificDay.seconds : '') + " " + state.specificDay.minutes + " " + this.hourToCron(state.specificDay.hours, state.specificDay.hourType) + " " + state.specificDay.day + " 1/" + state.specificDay.months + " " + this.weekDayDefaultChar + " " + this.yearDefaultChar).trim();
@@ -1157,7 +740,17 @@
             }
             this.cronForm.setValue(this.cron);
         };
-        CronGenComponent.prototype.computeYearlyCron = function (state) {
+        /**
+         * @private
+         * @param {?} state
+         * @return {?}
+         */
+        CronGenComponent.prototype.computeYearlyCron = /**
+         * @private
+         * @param {?} state
+         * @return {?}
+         */
+        function (state) {
             switch (state.subTab) {
                 case 'specificMonthDay':
                     this.cron = ((this.isCronFlavorQuartz ? state.specificMonthDay.seconds : '') + " " + state.specificMonthDay.minutes + " " + this.hourToCron(state.specificMonthDay.hours, state.specificMonthDay.hourType) + " " + state.specificMonthDay.day + " " + state.specificMonthDay.month + " " + this.weekDayDefaultChar + " " + this.yearDefaultChar).trim();
@@ -1170,20 +763,62 @@
             }
             this.cronForm.setValue(this.cron);
         };
-        CronGenComponent.prototype.computeAdvancedExpression = function (expression) {
+        /**
+         * @private
+         * @param {?} expression
+         * @return {?}
+         */
+        CronGenComponent.prototype.computeAdvancedExpression = /**
+         * @private
+         * @param {?} expression
+         * @return {?}
+         */
+        function (expression) {
             this.cron = expression;
             this.cronForm.setValue(this.cron);
         };
-        CronGenComponent.prototype.dayDisplay = function (day) {
+        /**
+         * @param {?} day
+         * @return {?}
+         */
+        CronGenComponent.prototype.dayDisplay = /**
+         * @param {?} day
+         * @return {?}
+         */
+        function (day) {
             return Days[day];
         };
-        CronGenComponent.prototype.monthWeekDisplay = function (monthWeekNumber) {
+        /**
+         * @param {?} monthWeekNumber
+         * @return {?}
+         */
+        CronGenComponent.prototype.monthWeekDisplay = /**
+         * @param {?} monthWeekNumber
+         * @return {?}
+         */
+        function (monthWeekNumber) {
             return MonthWeeks[monthWeekNumber];
         };
-        CronGenComponent.prototype.monthDisplay = function (month) {
-            return exports.Months[month];
+        /**
+         * @param {?} month
+         * @return {?}
+         */
+        CronGenComponent.prototype.monthDisplay = /**
+         * @param {?} month
+         * @return {?}
+         */
+        function (month) {
+            return Months[month];
         };
-        CronGenComponent.prototype.monthDayDisplay = function (month) {
+        /**
+         * @param {?} month
+         * @return {?}
+         */
+        CronGenComponent.prototype.monthDayDisplay = /**
+         * @param {?} month
+         * @return {?}
+         */
+        function (month) {
             if (month === 'L') {
                 return 'Last Day';
             }
@@ -1197,13 +832,45 @@
                 return "" + month + this.getOrdinalSuffix(month);
             }
         };
-        CronGenComponent.prototype.getAmPmHour = function (hour) {
+        /**
+         * @private
+         * @param {?} hour
+         * @return {?}
+         */
+        CronGenComponent.prototype.getAmPmHour = /**
+         * @private
+         * @param {?} hour
+         * @return {?}
+         */
+        function (hour) {
             return this.options.use24HourTime ? hour : (hour + 11) % 12 + 1;
         };
-        CronGenComponent.prototype.getHourType = function (hour) {
+        /**
+         * @private
+         * @param {?} hour
+         * @return {?}
+         */
+        CronGenComponent.prototype.getHourType = /**
+         * @private
+         * @param {?} hour
+         * @return {?}
+         */
+        function (hour) {
             return this.options.use24HourTime ? undefined : (hour >= 12 ? 'PM' : 'AM');
         };
-        CronGenComponent.prototype.hourToCron = function (hour, hourType) {
+        /**
+         * @private
+         * @param {?} hour
+         * @param {?} hourType
+         * @return {?}
+         */
+        CronGenComponent.prototype.hourToCron = /**
+         * @private
+         * @param {?} hour
+         * @param {?} hourType
+         * @return {?}
+         */
+        function (hour, hourType) {
             if (this.options.use24HourTime) {
                 return hour;
             }
@@ -1211,7 +878,17 @@
                 return hourType === 'AM' ? (hour === 12 ? 0 : hour) : (hour === 12 ? 12 : hour + 12);
             }
         };
-        CronGenComponent.prototype.handleModelChange = function (cron) {
+        /**
+         * @private
+         * @param {?} cron
+         * @return {?}
+         */
+        CronGenComponent.prototype.handleModelChange = /**
+         * @private
+         * @param {?} cron
+         * @return {?}
+         */
+        function (cron) {
             var _this = this;
             if (this.isDirty) {
                 this.isDirty = false;
@@ -1228,6 +905,7 @@
                     throw new Error('Invalid cron expression, there must be 5 segments');
                 }
             }
+            /** @type {?} */
             var origCron = cron;
             if (cron.split(' ').length === 5 && this.isCronFlavorStandard) {
                 cron = "0 " + cron + " *";
@@ -1248,6 +926,7 @@
                 this.activeTab = 'daily';
                 this.state.daily.subTab = 'everyDays';
                 this.state.daily.everyDays.days = parseInt(dayOfMonth.substring(2), 10);
+                /** @type {?} */
                 var parsedHours = parseInt(hours, 10);
                 this.state.daily.everyDays.hours = this.getAmPmHour(parsedHours);
                 this.state.daily.everyDays.hourType = this.getHourType(parsedHours);
@@ -1257,6 +936,7 @@
             else if (cron.match(/\d+ \d+ \d+ [\?\*] \* MON-FRI \*/)) {
                 this.activeTab = 'daily';
                 this.state.daily.subTab = 'everyWeekDay';
+                /** @type {?} */
                 var parsedHours = parseInt(hours, 10);
                 this.state.daily.everyWeekDay.hours = this.getAmPmHour(parsedHours);
                 this.state.daily.everyWeekDay.hourType = this.getHourType(parsedHours);
@@ -1265,8 +945,17 @@
             }
             else if (cron.match(/\d+ \d+ \d+ [\?\*] \* (MON|TUE|WED|THU|FRI|SAT|SUN)(,(MON|TUE|WED|THU|FRI|SAT|SUN))* \*/)) {
                 this.activeTab = 'weekly';
-                this.selectOptions.days.forEach(function (weekDay) { return _this.state.weekly[weekDay] = false; });
-                dayOfWeek.split(',').forEach(function (weekDay) { return _this.state.weekly[weekDay] = true; });
+                this.selectOptions.days.forEach((/**
+                 * @param {?} weekDay
+                 * @return {?}
+                 */
+                function (weekDay) { return _this.state.weekly[weekDay] = false; }));
+                dayOfWeek.split(',').forEach((/**
+                 * @param {?} weekDay
+                 * @return {?}
+                 */
+                function (weekDay) { return _this.state.weekly[weekDay] = true; }));
+                /** @type {?} */
                 var parsedHours = parseInt(hours, 10);
                 this.state.weekly.hours = this.getAmPmHour(parsedHours);
                 this.state.weekly.hourType = this.getHourType(parsedHours);
@@ -1278,6 +967,7 @@
                 this.state.monthly.subTab = 'specificDay';
                 this.state.monthly.specificDay.day = dayOfMonth;
                 this.state.monthly.specificDay.months = parseInt(month.substring(2), 10);
+                /** @type {?} */
                 var parsedHours = parseInt(hours, 10);
                 this.state.monthly.specificDay.hours = this.getAmPmHour(parsedHours);
                 this.state.monthly.specificDay.hourType = this.getHourType(parsedHours);
@@ -1285,13 +975,16 @@
                 this.state.monthly.specificDay.seconds = parseInt(seconds, 10);
             }
             else if (cron.match(/\d+ \d+ \d+ [\?\*] 1\/\d+ (MON|TUE|WED|THU|FRI|SAT|SUN)((#[1-5])|L) \*/)) {
+                /** @type {?} */
                 var day = dayOfWeek.substr(0, 3);
+                /** @type {?} */
                 var monthWeek = dayOfWeek.substr(3);
                 this.activeTab = 'monthly';
                 this.state.monthly.subTab = 'specificWeekDay';
                 this.state.monthly.specificWeekDay.monthWeek = monthWeek;
                 this.state.monthly.specificWeekDay.day = day;
                 this.state.monthly.specificWeekDay.months = parseInt(month.substring(2), 10);
+                /** @type {?} */
                 var parsedHours = parseInt(hours, 10);
                 this.state.monthly.specificWeekDay.hours = this.getAmPmHour(parsedHours);
                 this.state.monthly.specificWeekDay.hourType = this.getHourType(parsedHours);
@@ -1303,6 +996,7 @@
                 this.state.yearly.subTab = 'specificMonthDay';
                 this.state.yearly.specificMonthDay.month = parseInt(month, 10);
                 this.state.yearly.specificMonthDay.day = dayOfMonth;
+                /** @type {?} */
                 var parsedHours = parseInt(hours, 10);
                 this.state.yearly.specificMonthDay.hours = this.getAmPmHour(parsedHours);
                 this.state.yearly.specificMonthDay.hourType = this.getHourType(parsedHours);
@@ -1310,13 +1004,16 @@
                 this.state.yearly.specificMonthDay.seconds = parseInt(seconds, 10);
             }
             else if (cron.match(/\d+ \d+ \d+ [\?\*] \d+ (MON|TUE|WED|THU|FRI|SAT|SUN)((#[1-5])|L) \*/)) {
+                /** @type {?} */
                 var day = dayOfWeek.substr(0, 3);
+                /** @type {?} */
                 var monthWeek = dayOfWeek.substr(3);
                 this.activeTab = 'yearly';
                 this.state.yearly.subTab = 'specificMonthWeek';
                 this.state.yearly.specificMonthWeek.monthWeek = monthWeek;
                 this.state.yearly.specificMonthWeek.day = day;
                 this.state.yearly.specificMonthWeek.month = parseInt(month, 10);
+                /** @type {?} */
                 var parsedHours = parseInt(hours, 10);
                 this.state.yearly.specificMonthWeek.hours = this.getAmPmHour(parsedHours);
                 this.state.yearly.specificMonthWeek.hourType = this.getHourType(parsedHours);
@@ -1328,8 +1025,19 @@
                 this.state.advanced.expression = origCron;
             }
         };
-        CronGenComponent.prototype.cronIsValid = function (cron) {
+        /**
+         * @private
+         * @param {?} cron
+         * @return {?}
+         */
+        CronGenComponent.prototype.cronIsValid = /**
+         * @private
+         * @param {?} cron
+         * @return {?}
+         */
+        function (cron) {
             if (cron) {
+                /** @type {?} */
                 var cronParts = cron.split(' ');
                 return (this.isCronFlavorQuartz && (cronParts.length === 6
                     || cronParts.length === 7)
@@ -1337,7 +1045,15 @@
             }
             return false;
         };
-        CronGenComponent.prototype.getDefaultState = function () {
+        /**
+         * @private
+         * @return {?}
+         */
+        CronGenComponent.prototype.getDefaultState = /**
+         * @private
+         * @return {?}
+         */
+        function () {
             var _a = __read(this.options.defaultTime.split(':').map(Number), 3), defaultHours = _a[0], defaultMinutes = _a[1], defaultSeconds = _a[2];
             return {
                 minutes: {
@@ -1423,13 +1139,25 @@
                 }
             };
         };
-        CronGenComponent.prototype.getOrdinalSuffix = function (value) {
+        /**
+         * @private
+         * @param {?} value
+         * @return {?}
+         */
+        CronGenComponent.prototype.getOrdinalSuffix = /**
+         * @private
+         * @param {?} value
+         * @return {?}
+         */
+        function (value) {
             if (value.length > 1) {
+                /** @type {?} */
                 var secondToLastDigit = value.charAt(value.length - 2);
                 if (secondToLastDigit === '1') {
                     return 'th';
                 }
             }
+            /** @type {?} */
             var lastDigit = value.charAt(value.length - 1);
             switch (lastDigit) {
                 case '1':
@@ -1442,7 +1170,15 @@
                     return 'th';
             }
         };
-        CronGenComponent.prototype.getSelectOptions = function () {
+        /**
+         * @private
+         * @return {?}
+         */
+        CronGenComponent.prototype.getSelectOptions = /**
+         * @private
+         * @return {?}
+         */
+        function () {
             return {
                 months: this.getRange(1, 12),
                 monthWeeks: ['#1', '#2', '#3', '#4', '#5', 'L'],
@@ -1457,133 +1193,230 @@
                 hourTypes: ['AM', 'PM']
             };
         };
-        CronGenComponent.prototype.getRange = function (start, end) {
+        /**
+         * @private
+         * @param {?} start
+         * @param {?} end
+         * @return {?}
+         */
+        CronGenComponent.prototype.getRange = /**
+         * @private
+         * @param {?} start
+         * @param {?} end
+         * @return {?}
+         */
+        function (start, end) {
+            /** @type {?} */
             var length = end - start + 1;
-            return Array.apply(null, Array(length)).map(function (_, i) { return i + start; });
+            return Array.apply(null, Array(length)).map((/**
+             * @param {?} _
+             * @param {?} i
+             * @return {?}
+             */
+            function (_, i) { return i + start; }));
         };
-        CronGenComponent.prototype.writeValue = function (obj) {
+        /**
+         * @param {?} obj
+         * @return {?}
+         */
+        CronGenComponent.prototype.writeValue = /**
+         * @param {?} obj
+         * @return {?}
+         */
+        function (obj) {
             this.cron = obj;
         };
-        CronGenComponent.prototype.registerOnChange = function (fn) {
+        /**
+         * @param {?} fn
+         * @return {?}
+         */
+        CronGenComponent.prototype.registerOnChange = /**
+         * @param {?} fn
+         * @return {?}
+         */
+        function (fn) {
             this.onChange = fn;
         };
-        CronGenComponent.prototype.registerOnTouched = function (fn) {
+        /**
+         * @param {?} fn
+         * @return {?}
+         */
+        CronGenComponent.prototype.registerOnTouched = /**
+         * @param {?} fn
+         * @return {?}
+         */
+        function (fn) {
             this.onTouched = fn;
         };
-        CronGenComponent.prototype.setDisabledState = function (isDisabled) {
+        /**
+         * @param {?} isDisabled
+         * @return {?}
+         */
+        CronGenComponent.prototype.setDisabledState = /**
+         * @param {?} isDisabled
+         * @return {?}
+         */
+        function (isDisabled) {
             this.disabled = isDisabled;
         };
-        /** @nocollapse */ CronGenComponent.ɵfac = function CronGenComponent_Factory(t) { return new (t || CronGenComponent)(core.ɵɵdirectiveInject(forms.FormBuilder)); };
-        /** @nocollapse */ CronGenComponent.ɵcmp = core.ɵɵdefineComponent({ type: CronGenComponent, selectors: [["cron-editor"]], inputs: { backgroundColor: "backgroundColor", color: "color", disabled: "disabled", options: "options", cron: "cron" }, features: [core.ɵɵProvidersFeature([CRON_VALUE_ACCESSOR])], decls: 9, vars: 9, consts: [[1, "cron-editor-main"], [1, "cron-editor-container", 3, "backgroundColor", "color", "selectedIndexChange"], ["class", "cron-editor-tab", "label", "Minutes", 4, "ngIf"], ["class", "cron-editor-tab", "label", "Hourly", 4, "ngIf"], ["class", "cron-editor-tab", "label", "Daily", 4, "ngIf"], ["class", "cron-editor-tab", "label", "Weekly", 4, "ngIf"], ["class", "cron-editor-tab", "label", "Monthly", 4, "ngIf"], ["class", "cron-editor-tab", "label", "Yearly", 4, "ngIf"], ["class", "cron-editor-tab", "label", "Advanced", 4, "ngIf"], ["label", "Minutes", 1, "cron-editor-tab"], [1, "cron-editor-tab-content"], [1, "cron-form-label"], [3, "formGroup", "use24HourTime", "hideHours", "hideSeconds"], ["label", "Hourly", 1, "cron-editor-tab"], [3, "formGroup", "use24HourTime", "hideSeconds"], ["label", "Daily", 1, "cron-editor-tab"], [1, "cron-editor-tab-content", 3, "formGroup"], ["formControlName", "subTab", 1, "cron-editor-radio-group"], ["name", "subTab", "value", "everyDays", "checked", "checked", 1, "cron-editor-radio-button"], ["formGroupName", "everyDays"], ["formControlName", "days"], [3, "value", 4, "ngFor", "ngForOf"], ["formGroupName", "everyDays", 3, "use24HourTime", "hideSeconds"], ["name", "subTab", "value", "everyWeekDay", 1, "cron-editor-radio-button"], ["formGroupName", "everyWeekDay", 3, "use24HourTime", "hideSeconds"], [3, "value"], ["label", "Weekly", 1, "cron-editor-tab"], [3, "formGroup"], ["formControlName", "MON", 1, "checkbox-margin"], ["formControlName", "TUE", 1, "checkbox-margin"], ["formControlName", "WED", 1, "checkbox-margin"], ["formControlName", "THU", 1, "checkbox-margin"], ["formControlName", "FRI", 1, "checkbox-margin"], ["formControlName", "SAT", 1, "checkbox-margin"], ["formControlName", "SUN", 1, "checkbox-margin"], ["label", "Monthly", 1, "cron-editor-tab"], ["formControlName", "subTab"], ["name", "monthly-radio", "value", "specificDay"], ["formGroupName", "specificDay"], [4, "ngIf"], ["formControlName", "months", 1, "months-small", 3, "ngClass"], [3, "disabled", "formGroup", "use24HourTime", "hideSeconds"], ["name", "monthly-radio", "value", "specificWeekDay"], ["formGroupName", "specificWeekDay"], ["formControlName", "monthWeek", 1, "day-order-in-month", 3, "ngClass"], ["formControlName", "day", 1, "week-days", 3, "ngClass"], ["formControlName", "months", 1, "months-small"], ["formControlName", "day", 1, "month-days"], ["label", "Yearly", 1, "cron-editor-tab"], ["name", "yearly-radio", "value", "specificMonthDay"], ["formGroupName", "specificMonthDay", 4, "ngIf"], ["formGroupName", "specificMonthDay"], ["formControlName", "month", 1, "months"], ["name", "yearly-radio", "value", "specificMonthWeek", 3, "ngClass"], ["formGroupName", "specificMonthWeek"], ["formControlName", "monthWeek", 1, "day-order-in-month"], ["formControlName", "day", 1, "week-days"], ["label", "Advanced", 1, "cron-editor-tab"], ["matInput", "", "type", "text", "formControlName", "expression", 1, "advanced-cron-editor-input"]], template: function CronGenComponent_Template(rf, ctx) { if (rf & 1) {
-                core.ɵɵelementStart(0, "section", 0);
-                core.ɵɵelementStart(1, "mat-tab-group", 1);
-                core.ɵɵlistener("selectedIndexChange", function CronGenComponent_Template_mat_tab_group_selectedIndexChange_1_listener($event) { return ctx.onTabFocus($event); });
-                core.ɵɵtemplate(2, CronGenComponent_mat_tab_2_Template, 5, 4, "mat-tab", 2);
-                core.ɵɵtemplate(3, CronGenComponent_mat_tab_3_Template, 5, 3, "mat-tab", 3);
-                core.ɵɵtemplate(4, CronGenComponent_mat_tab_4_Template, 17, 6, "mat-tab", 4);
-                core.ɵɵtemplate(5, CronGenComponent_mat_tab_5_Template, 22, 4, "mat-tab", 5);
-                core.ɵɵtemplate(6, CronGenComponent_mat_tab_6_Template, 38, 17, "mat-tab", 6);
-                core.ɵɵtemplate(7, CronGenComponent_mat_tab_7_Template, 35, 16, "mat-tab", 7);
-                core.ɵɵtemplate(8, CronGenComponent_mat_tab_8_Template, 6, 1, "mat-tab", 8);
-                core.ɵɵelementEnd();
-                core.ɵɵelementEnd();
-            } if (rf & 2) {
-                core.ɵɵadvance(1);
-                core.ɵɵproperty("backgroundColor", ctx.backgroundColor)("color", ctx.color);
-                core.ɵɵadvance(1);
-                core.ɵɵproperty("ngIf", !ctx.options.hideMinutesTab);
-                core.ɵɵadvance(1);
-                core.ɵɵproperty("ngIf", !ctx.options.hideHourlyTab);
-                core.ɵɵadvance(1);
-                core.ɵɵproperty("ngIf", !ctx.options.hideDailyTab);
-                core.ɵɵadvance(1);
-                core.ɵɵproperty("ngIf", !ctx.options.hideWeeklyTab);
-                core.ɵɵadvance(1);
-                core.ɵɵproperty("ngIf", !ctx.options.hideMonthlyTab);
-                core.ɵɵadvance(1);
-                core.ɵɵproperty("ngIf", !ctx.options.hideYearlyTab);
-                core.ɵɵadvance(1);
-                core.ɵɵproperty("ngIf", !ctx.options.hideAdvancedTab);
-            } }, directives: [tabs.MatTabGroup, common.NgIf, tabs.MatTab, TimePickerComponent, forms.NgControlStatusGroup, forms.FormGroupDirective, radio.MatRadioGroup, forms.NgControlStatus, forms.FormControlName, radio.MatRadioButton, formField.MatFormField, forms.FormGroupName, formField.MatLabel, select.MatSelect, common.NgForOf, core$1.MatOption, checkbox.MatCheckbox, common.NgClass, forms.NgSelectOption, forms.ɵangular_packages_forms_forms_x, input.MatInput, forms.DefaultValueAccessor], styles: [".cron-editor-main[_ngcontent-%COMP%]{@include mat-elevation(1);}.cron-editor-tab-content[_ngcontent-%COMP%]{height:200px;margin-top:24px;border-radius:8px}.cron-editor-main[_ngcontent-%COMP%]   .cron-editor-container[_ngcontent-%COMP%]   .cron-editor-radio[_ngcontent-%COMP%]{width:20px;display:inline-block}.cron-editor-main[_ngcontent-%COMP%]   .cron-editor-container[_ngcontent-%COMP%]   .cron-editor-checkbox[_ngcontent-%COMP%], .cron-editor-main[_ngcontent-%COMP%]   .cron-editor-container[_ngcontent-%COMP%]   .cron-editor-input[_ngcontent-%COMP%], .cron-editor-main[_ngcontent-%COMP%]   .cron-editor-container[_ngcontent-%COMP%]   .cron-editor-select[_ngcontent-%COMP%]{display:inline-block}.cron-editor-main[_ngcontent-%COMP%]   .cron-editor-container[_ngcontent-%COMP%]   .well-time-wrapper[_ngcontent-%COMP%]{padding-left:20px}.cron-editor-main[_ngcontent-%COMP%]   .cron-editor-container[_ngcontent-%COMP%]   .inline-block[_ngcontent-%COMP%]{display:inline-block}.cron-editor-main[_ngcontent-%COMP%]   .cron-editor-container[_ngcontent-%COMP%]   .hour-types[_ngcontent-%COMP%]{width:70px}.nav-tabs[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]{cursor:pointer}.cron-editor-radio-group[_ngcontent-%COMP%]{display:flex;flex-direction:column;margin:15px 0}.cron-editor-radio-button[_ngcontent-%COMP%]{margin:5px}.checkbox-margin[_ngcontent-%COMP%]{margin:0 10px}"] });
+        CronGenComponent.decorators = [
+            { type: core.Component, args: [{
+                        selector: 'cron-editor',
+                        template: "<section class=\"cron-editor-main\">\n    <mat-tab-group class=\"cron-editor-container\" (selectedIndexChange)=\"onTabFocus($event)\" [backgroundColor]=\"backgroundColor\" [color]=\"color\">\n\n      <!-- Minute -->\n      <mat-tab class=\"cron-editor-tab\" label=\"Minutes\" *ngIf=\"!options.hideMinutesTab\">\n        <div class=\"cron-editor-tab-content\">\n\n          <span class=\"cron-form-label\">Every </span>\n\n            <cron-time-picker\n              [formGroup]=\"minutesForm\"\n              [use24HourTime]=\"options.use24HourTime\"\n              [hideHours]=\"true\"\n              [hideSeconds]=\"options.hideSeconds || !isCronFlavorQuartz\">\n            </cron-time-picker>\n        </div>\n      </mat-tab>\n\n      <!-- Hourly -->\n      <mat-tab class=\"cron-editor-tab\" label=\"Hourly\" *ngIf=\"!options.hideHourlyTab\">\n        <div class=\"cron-editor-tab-content\">\n          <span class=\"cron-form-label\">Every </span>\n\n          <cron-time-picker [formGroup]=\"hourlyForm\"\n                              [use24HourTime]=\"options.use24HourTime\"\n                              [hideSeconds]=\"options.hideSeconds ||  !isCronFlavorQuartz\">\n          </cron-time-picker>\n        </div>\n      </mat-tab>\n\n\n      <!-- Daily-->\n      <mat-tab class=\"cron-editor-tab\" label=\"Daily\" *ngIf=\"!options.hideDailyTab\">\n        <div class=\"cron-editor-tab-content\" [formGroup]=\"dailyForm\">\n\n          <mat-radio-group class=\"cron-editor-radio-group\" formControlName=\"subTab\">\n            <mat-radio-button name=\"subTab\" class=\"cron-editor-radio-button\" value=\"everyDays\" checked=\"checked\">\n\n              <span class=\"cron-form-label\">Every </span>\n\n              <mat-form-field formGroupName=\"everyDays\">\n                <mat-label>Day(s)</mat-label>\n                <mat-select formControlName=\"days\">\n                  <mat-option *ngFor=\"let monthDay of selectOptions.monthDays\" [value]=\"monthDay\">\n                    {{monthDay}}\n                  </mat-option>\n                </mat-select>\n              </mat-form-field>\n\n               at\n\n              <cron-time-picker\n                formGroupName=\"everyDays\"\n                [use24HourTime]=\"options.use24HourTime\"\n                [hideSeconds]=\"options.hideSeconds || !isCronFlavorQuartz\">\n              </cron-time-picker>\n\n            </mat-radio-button>\n\n            <mat-radio-button name=\"subTab\" class=\"cron-editor-radio-button\" value=\"everyWeekDay\">\n\n              <span>Week Day (MON-FRI) at </span>\n\n              <cron-time-picker\n                formGroupName=\"everyWeekDay\"\n                [use24HourTime]=\"options.use24HourTime\"\n                [hideSeconds]=\"options.hideSeconds || !isCronFlavorQuartz\">\n              </cron-time-picker>\n\n            </mat-radio-button>\n          </mat-radio-group>\n          </div>\n      </mat-tab>\n\n      <!-- Weekly-->\n      <mat-tab  class=\"cron-editor-tab\" label=\"Weekly\" *ngIf=\"!options.hideWeeklyTab\">\n        <div class=\"cron-editor-tab-content\">\n\n          <span class=\"cron-form-label\">Every </span>\n\n          <div [formGroup]=\"weeklyForm\">\n            <mat-checkbox class=\"checkbox-margin\" formControlName=\"MON\">Monday</mat-checkbox>\n            <mat-checkbox class=\"checkbox-margin\" formControlName=\"TUE\">Tuesday</mat-checkbox>\n            <mat-checkbox class=\"checkbox-margin\" formControlName=\"WED\">Wednesday</mat-checkbox>\n            <mat-checkbox class=\"checkbox-margin\" formControlName=\"THU\">Thursday</mat-checkbox>\n            <mat-checkbox class=\"checkbox-margin\" formControlName=\"FRI\">Friday</mat-checkbox>\n            <mat-checkbox class=\"checkbox-margin\" formControlName=\"SAT\">Saturday</mat-checkbox>\n            <mat-checkbox class=\"checkbox-margin\" formControlName=\"SUN\">Sunday</mat-checkbox>\n          </div>\n\n\n          <span class=\"cron-form-label\">at time </span>\n\n          <cron-time-picker [formGroup]=\"weeklyForm\"\n                            [use24HourTime]=\"options.use24HourTime\"\n                            [hideSeconds]=\"options.hideSeconds|| !isCronFlavorQuartz\">\n          </cron-time-picker>\n        </div>\n\n    </mat-tab>\n\n      <!-- Monthly-->\n      <mat-tab class=\"cron-editor-tab\" label=\"Monthly\" *ngIf=\"!options.hideMonthlyTab\">\n\n        <div class=\"cron-editor-tab-content\" [formGroup]=\"monthlyForm\">\n\n\n          <mat-radio-group formControlName=\"subTab\">\n\n            <mat-radio-button  name=\"monthly-radio\" value=\"specificDay\" >\n\n              <!-- Spesific day -->\n              <span formGroupName=\"specificDay\">\n\n                On the\n\n                <ng-container *ngIf=\"options.cronFlavor === 'quartz'\">\n                  <mat-form-field>\n                    <mat-label>Day</mat-label>\n                    <mat-select class=\"month-days\" formControlName=\"day\">\n                      <option *ngFor=\"let monthDaysWithLast of selectOptions.monthDaysWithLasts\" [value]=\"monthDaysWithLast\">\n                        {{monthDayDisplay(monthDaysWithLast)}}\n                      </option>\n                    </mat-select>\n                  </mat-form-field>\n                </ng-container>\n\n                <ng-container *ngIf=\"options.cronFlavor === 'standard'\">\n                  <mat-form-field>\n                    <mat-label>Day</mat-label>\n                    <mat-select class=\"month-days\"  formControlName=\"day\">\n                      <mat-option *ngFor=\"let monthDaysWithOutLast of selectOptions.monthDaysWithOutLasts\" [value]=\"monthDaysWithOutLast\">\n                        {{monthDayDisplay(monthDaysWithOutLast)}}\n                      </mat-option>\n                    </mat-select>\n                  </mat-form-field>\n                </ng-container>\n\n                of every\n\n                <ng-container>\n                  <mat-form-field>\n                    <mat-label>Month</mat-label>\n                    <mat-select class=\"months-small\" formControlName=\"months\" [ngClass]=\"options.formSelectClass\">\n                      <mat-option *ngFor=\"let month of selectOptions.months\" [value]=\"month\">\n                        {{month}}\n                      </mat-option>\n                    </mat-select>\n                  </mat-form-field>\n                </ng-container>\n\n                at time\n\n                <cron-time-picker [disabled]=\"disabled\" [formGroup]=\"monthlyForm.controls.specificDay\"\n                                  [use24HourTime]=\"options.use24HourTime\"\n                                  [hideSeconds]=\"options.hideSeconds || !isCronFlavorQuartz\">\n                </cron-time-picker>\n              </span>\n\n\n            </mat-radio-button>\n\n            <mat-radio-button  name=\"monthly-radio\" value=\"specificWeekDay\">\n\n              <!-- Spesific Week day -->\n              <span formGroupName=\"specificWeekDay\">\n\n                On the\n\n                <mat-form-field>\n                  <mat-label>Week</mat-label>\n                  <mat-select class=\"day-order-in-month\" formControlName=\"monthWeek\" [ngClass]=\"options.formSelectClass\">\n                    <mat-option *ngFor=\"let monthWeek of selectOptions.monthWeeks\" [value]=\"monthWeek\">\n                      {{monthWeekDisplay(monthWeek)}}\n                    </mat-option>\n                  </mat-select>\n                </mat-form-field>\n\n                <mat-form-field>\n                  <mat-label>Day</mat-label>\n                  <mat-select class=\"week-days\" formControlName=\"day\" [ngClass]=\"options.formSelectClass\">\n                    <mat-option *ngFor=\"let day of selectOptions.days\" [value]=\"day\">\n                      {{dayDisplay(day)}}\n                    </mat-option>\n                  </mat-select>\n                </mat-form-field>\n\n                of every\n\n                <mat-form-field>\n                  <mat-label>Month</mat-label>\n                  <mat-select class=\"months-small\" formControlName=\"months\">\n                    <mat-option *ngFor=\"let month of selectOptions.months\" [value]=\"month\">\n                      {{month}}\n                    </mat-option>\n                  </mat-select>\n                </mat-form-field>\n\n                at time\n\n                <cron-time-picker [formGroup]=\"monthlyForm.controls.specificWeekDay\"\n                                  [use24HourTime]=\"options.use24HourTime\"\n                                  [hideSeconds]=\"options.hideSeconds || !isCronFlavorQuartz\">\n\n                </cron-time-picker>\n\n\n              </span>\n            </mat-radio-button>\n\n          </mat-radio-group>\n\n        </div>\n      </mat-tab>\n\n      <!-- Yearly-->\n      <mat-tab class=\"cron-editor-tab\"  label=\"Yearly\" *ngIf=\"!options.hideYearlyTab\">\n\n        <div class=\"cron-editor-tab-content\" [formGroup]=\"yearlyForm\">\n\n          <mat-radio-group formControlName=\"subTab\">\n\n            <mat-radio-button name=\"yearly-radio\" value=\"specificMonthDay\">\n\n              On the\n\n              <mat-form-field formGroupName=\"specificMonthDay\" *ngIf=\"options.cronFlavor === 'quartz'\">\n                <mat-label>Day</mat-label>\n                <mat-select class=\"month-days\" formControlName=\"day\">\n                  <mat-option *ngFor=\"let monthDaysWithLast of selectOptions.monthDaysWithLasts\" [value]=\"monthDaysWithLast\">\n                    {{monthDayDisplay(monthDaysWithLast)}}\n                  </mat-option>\n                </mat-select>\n              </mat-form-field>\n\n              <mat-form-field formGroupName=\"specificMonthDay\" *ngIf=\"options.cronFlavor === 'standard'\">\n                <mat-label>Day</mat-label>\n                <mat-select class=\"month-days\" formControlName=\"day\" >\n                  <mat-option *ngFor=\"let monthDaysWithOutLast of selectOptions.monthDaysWithOutLasts\" [value]=\"monthDaysWithOutLast\">\n                    {{monthDayDisplay(monthDaysWithOutLast)}}\n                  </mat-option>\n                </mat-select>\n              </mat-form-field>\n\n              of\n\n              <mat-form-field formGroupName=\"specificMonthDay\">\n                <mat-label>Month</mat-label>\n                <mat-select class=\"months\" formControlName=\"month\">\n                  <mat-option *ngFor=\"let month of selectOptions.months\" [value]=\"month\">\n                    {{monthDisplay(month)}}\n                  </mat-option>\n                </mat-select>\n              </mat-form-field>\n\n              at time\n\n              <cron-time-picker [disabled]=\"disabled\"\n                                [formGroup]=\"yearlyForm.controls.specificMonthDay\"\n                                [use24HourTime]=\"options.use24HourTime\"\n                                [hideSeconds]=\"options.hideSeconds || !isCronFlavorQuartz\">\n              </cron-time-picker>\n            </mat-radio-button>\n\n            <mat-radio-button name=\"yearly-radio\" value=\"specificMonthWeek\" [ngClass]=\"state.formRadioClass\">\n\n              On the\n\n              <mat-form-field formGroupName=\"specificMonthWeek\">\n                <mat-label>Week</mat-label>\n                <mat-select class=\"day-order-in-month\" formControlName=\"monthWeek\" >\n                  <mat-option *ngFor=\"let monthWeek of selectOptions.monthWeeks\" [value]=\"monthWeek\">\n                    {{monthWeekDisplay(monthWeek)}}\n                  </mat-option>\n                </mat-select>\n              </mat-form-field>\n\n              <mat-form-field formGroupName=\"specificMonthWeek\">\n                <mat-label>Day</mat-label>\n                <mat-select class=\"week-days\"  formControlName=\"day\" >\n                  <mat-option *ngFor=\"let day of selectOptions.days\" [value]=\"day\">\n                    {{dayDisplay(day)}}\n                  </mat-option>\n                </mat-select>\n              </mat-form-field>\n\n              of\n\n              <mat-form-field formGroupName=\"specificMonthWeek\">\n                <mat-label>Month</mat-label>\n                <mat-select class=\"months\" formControlName=\"month\">\n                  <mat-option *ngFor=\"let month of selectOptions.months\" [value]=\"month\">\n                    {{monthDisplay(month)}}\n                  </mat-option>\n                </mat-select>\n              </mat-form-field>\n\n              at time\n\n              <cron-time-picker [disabled]=\"disabled\"\n                                [formGroup]=\"yearlyForm.controls.specificMonthWeek\"\n                                [use24HourTime]=\"options.use24HourTime\"\n                                [hideSeconds]=\"options.hideSeconds || !isCronFlavorQuartz\">\n              </cron-time-picker>\n            </mat-radio-button>\n          </mat-radio-group>\n        </div>\n      </mat-tab>\n\n      <!-- Advanced-->\n      <mat-tab class=\"cron-editor-tab\" label=\"Advanced\" *ngIf=\"!options.hideAdvancedTab\">\n        <div class=\"cron-editor-tab-content\" [formGroup]=\"advancedForm\">\n\n          <mat-form-field>\n            <mat-label>Expression</mat-label>\n            <input matInput type=\"text\" class=\"advanced-cron-editor-input\" formControlName=\"expression\">\n          </mat-form-field>\n        </div>\n      </mat-tab>\n    </mat-tab-group>\n</section>\n",
+                        providers: [CRON_VALUE_ACCESSOR],
+                        styles: [".cron-editor-main{@include mat-elevation(1);}.cron-editor-tab-content{height:200px;margin-top:24px;border-radius:8px}.cron-editor-main .cron-editor-container .cron-editor-radio{width:20px;display:inline-block}.cron-editor-main .cron-editor-container .cron-editor-checkbox,.cron-editor-main .cron-editor-container .cron-editor-input,.cron-editor-main .cron-editor-container .cron-editor-select{display:inline-block}.cron-editor-main .cron-editor-container .well-time-wrapper{padding-left:20px}.cron-editor-main .cron-editor-container .inline-block{display:inline-block}.cron-editor-main .cron-editor-container .hour-types{width:70px}.nav-tabs li a{cursor:pointer}.cron-editor-radio-group{display:flex;flex-direction:column;margin:15px 0}.cron-editor-radio-button{margin:5px}.checkbox-margin{margin:0 10px}"]
+                    }] }
+        ];
+        /** @nocollapse */
+        CronGenComponent.ctorParameters = function () { return [
+            { type: forms.FormBuilder }
+        ]; };
+        CronGenComponent.propDecorators = {
+            backgroundColor: [{ type: core.Input }],
+            color: [{ type: core.Input }],
+            disabled: [{ type: core.Input }],
+            options: [{ type: core.Input }],
+            cron: [{ type: core.Input }]
+        };
         return CronGenComponent;
     }());
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(CronGenComponent, [{
-            type: core.Component,
-            args: [{
-                    selector: 'cron-editor',
-                    templateUrl: './cron-editor.template.html',
-                    styleUrls: ['./cron-editor.component.css'],
-                    providers: [CRON_VALUE_ACCESSOR]
-                }]
-        }], function () { return [{ type: forms.FormBuilder }]; }, { backgroundColor: [{
-                type: core.Input
-            }], color: [{
-                type: core.Input
-            }], disabled: [{
-                type: core.Input
-            }], options: [{
-                type: core.Input
-            }], cron: [{
-                type: core.Input
-            }] }); })();
+    if (false) {
+        /** @type {?} */
+        CronGenComponent.prototype.backgroundColor;
+        /** @type {?} */
+        CronGenComponent.prototype.color;
+        /** @type {?} */
+        CronGenComponent.prototype.disabled;
+        /** @type {?} */
+        CronGenComponent.prototype.options;
+        /** @type {?} */
+        CronGenComponent.prototype.activeTab;
+        /** @type {?} */
+        CronGenComponent.prototype.selectOptions;
+        /** @type {?} */
+        CronGenComponent.prototype.state;
+        /**
+         * @type {?}
+         * @private
+         */
+        CronGenComponent.prototype.localCron;
+        /**
+         * @type {?}
+         * @private
+         */
+        CronGenComponent.prototype.isDirty;
+        /** @type {?} */
+        CronGenComponent.prototype.cronForm;
+        /** @type {?} */
+        CronGenComponent.prototype.minutesForm;
+        /** @type {?} */
+        CronGenComponent.prototype.hourlyForm;
+        /** @type {?} */
+        CronGenComponent.prototype.dailyForm;
+        /** @type {?} */
+        CronGenComponent.prototype.weeklyForm;
+        /** @type {?} */
+        CronGenComponent.prototype.monthlyForm;
+        /** @type {?} */
+        CronGenComponent.prototype.yearlyForm;
+        /** @type {?} */
+        CronGenComponent.prototype.advancedForm;
+        /** @type {?} */
+        CronGenComponent.prototype.onChange;
+        /** @type {?} */
+        CronGenComponent.prototype.onTouched;
+        /**
+         * @type {?}
+         * @private
+         */
+        CronGenComponent.prototype.fb;
+    }
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: src/cron-editor.module.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    var ɵ0 = { float: 'always' }, ɵ1 = { appearance: 'outline' };
     var CronEditorModule = /** @class */ (function () {
         function CronEditorModule() {
         }
-        /** @nocollapse */ CronEditorModule.ɵmod = core.ɵɵdefineNgModule({ type: CronEditorModule });
-        /** @nocollapse */ CronEditorModule.ɵinj = core.ɵɵdefineInjector({ factory: function CronEditorModule_Factory(t) { return new (t || CronEditorModule)(); }, providers: [
-                { provide: core$1.MAT_LABEL_GLOBAL_OPTIONS, useValue: { float: 'always' } },
-                { provide: formField.MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'outline' } }
-            ], imports: [[
-                    common.CommonModule,
-                    forms.FormsModule,
-                    forms.ReactiveFormsModule,
-                    tabs.MatTabsModule,
-                    list.MatListModule,
-                    select.MatSelectModule,
-                    input.MatInputModule,
-                    radio.MatRadioModule,
-                    checkbox.MatCheckboxModule
-                ]] });
+        CronEditorModule.decorators = [
+            { type: core.NgModule, args: [{
+                        imports: [
+                            common.CommonModule,
+                            forms.FormsModule,
+                            forms.ReactiveFormsModule,
+                            tabs.MatTabsModule,
+                            list.MatListModule,
+                            select.MatSelectModule,
+                            input.MatInputModule,
+                            radio.MatRadioModule,
+                            checkbox.MatCheckboxModule
+                        ],
+                        exports: [TimePickerComponent, CronGenComponent],
+                        declarations: [TimePickerComponent, CronGenComponent],
+                        providers: [
+                            { provide: core$1.MAT_LABEL_GLOBAL_OPTIONS, useValue: ɵ0 },
+                            { provide: formField.MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: ɵ1 }
+                        ]
+                    },] }
+        ];
         return CronEditorModule;
     }());
-    (function () { (typeof ngJitMode === "undefined" || ngJitMode) && core.ɵɵsetNgModuleScope(CronEditorModule, { declarations: [TimePickerComponent, CronGenComponent], imports: [common.CommonModule,
-            forms.FormsModule,
-            forms.ReactiveFormsModule,
-            tabs.MatTabsModule,
-            list.MatListModule,
-            select.MatSelectModule,
-            input.MatInputModule,
-            radio.MatRadioModule,
-            checkbox.MatCheckboxModule], exports: [TimePickerComponent, CronGenComponent] }); })();
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(CronEditorModule, [{
-            type: core.NgModule,
-            args: [{
-                    imports: [
-                        common.CommonModule,
-                        forms.FormsModule,
-                        forms.ReactiveFormsModule,
-                        tabs.MatTabsModule,
-                        list.MatListModule,
-                        select.MatSelectModule,
-                        input.MatInputModule,
-                        radio.MatRadioModule,
-                        checkbox.MatCheckboxModule
-                    ],
-                    exports: [TimePickerComponent, CronGenComponent],
-                    declarations: [TimePickerComponent, CronGenComponent],
-                    providers: [
-                        { provide: core$1.MAT_LABEL_GLOBAL_OPTIONS, useValue: { float: 'always' } },
-                        { provide: formField.MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'outline' } }
-                    ]
-                }]
-        }], null, null); })();
+
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: src/CronOptions.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
+     * @record
+     */
+    function CronOptions() { }
+    if (false) {
+        /** @type {?} */
+        CronOptions.prototype.formInputClass;
+        /** @type {?} */
+        CronOptions.prototype.formSelectClass;
+        /** @type {?} */
+        CronOptions.prototype.formRadioClass;
+        /** @type {?} */
+        CronOptions.prototype.formCheckboxClass;
+        /** @type {?} */
+        CronOptions.prototype.defaultTime;
+        /** @type {?} */
+        CronOptions.prototype.hideMinutesTab;
+        /** @type {?} */
+        CronOptions.prototype.hideHourlyTab;
+        /** @type {?} */
+        CronOptions.prototype.hideDailyTab;
+        /** @type {?} */
+        CronOptions.prototype.hideWeeklyTab;
+        /** @type {?} */
+        CronOptions.prototype.hideMonthlyTab;
+        /** @type {?} */
+        CronOptions.prototype.hideYearlyTab;
+        /** @type {?} */
+        CronOptions.prototype.hideAdvancedTab;
+        /** @type {?} */
+        CronOptions.prototype.hideSpecificWeekDayTab;
+        /** @type {?} */
+        CronOptions.prototype.hideSpecificMonthWeekTab;
+        /** @type {?} */
+        CronOptions.prototype.use24HourTime;
+        /** @type {?} */
+        CronOptions.prototype.hideSeconds;
+        /** @type {?} */
+        CronOptions.prototype.cronFlavor;
+    }
 
     exports.CRON_VALUE_ACCESSOR = CRON_VALUE_ACCESSOR;
     exports.CronEditorModule = CronEditorModule;
     exports.CronGenComponent = CronGenComponent;
     exports.Days = Days;
     exports.MonthWeeks = MonthWeeks;
+    exports.Months = Months;
     exports.TimePickerComponent = TimePickerComponent;
 
     Object.defineProperty(exports, '__esModule', { value: true });

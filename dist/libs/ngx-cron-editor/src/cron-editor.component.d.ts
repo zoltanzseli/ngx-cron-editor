@@ -2,7 +2,6 @@ import { OnInit } from '@angular/core';
 import { CronOptions } from './CronOptions';
 import { ControlValueAccessor, FormBuilder, FormControl, FormGroup } from '@angular/forms';
 import { ThemePalette } from '@angular/material/core';
-import * as i0 from "@angular/core";
 export declare const CRON_VALUE_ACCESSOR: any;
 export declare class CronGenComponent implements OnInit, ControlValueAccessor {
     private fb;
@@ -70,6 +69,4 @@ export declare class CronGenComponent implements OnInit, ControlValueAccessor {
     registerOnChange(fn: any): void;
     registerOnTouched(fn: any): void;
     setDisabledState(isDisabled: boolean): void;
-    static ɵfac: i0.ɵɵFactoryDef<CronGenComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CronGenComponent, "cron-editor", never, { "backgroundColor": "backgroundColor"; "color": "color"; "disabled": "disabled"; "options": "options"; "cron": "cron"; }, {}, never, never>;
 }
